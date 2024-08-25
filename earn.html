@@ -1,347 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                        dark900: "#27292e",
-                        dark800: "#404348",
-                        gray900: "#676155",
-                        gray800: "#332f26",
-                        gray700: "#928e82",
-                        gray600: "#95979A",
-                        primary900: "#1c1f24",
-                        primary800: "#272a2f",
-                        purple100: "#5155DA",
-                        purple200: "#2B2D74",
-                        purple300: "#35389E",
-                        purple400: "#1C2848",
-                        purple500:"#5256D5",
-                        yellow: "#ffc526",
-                        blurcolor: "#5160E6",
-                        green: "#53bf5a",
-                        blue:"#277fcc",
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              dark900: "#27292e",
+              dark800: "#404348",
+              gray900: "#676155",
+              gray800: "#332f26",
+              gray700: "#928e82",
+              gray600: "#95979A",
+              primary900: "#1c1f24",
+              primary800: "#272a2f",
+              purple100: "#5155DA",
+              purple200: "#2B2D74",
+              purple300: "#35389E",
+              purple400: "#1C2848",
+              purple500: "#5256D5",
+              yellow: "#ffc526",
+              blurcolor: "#5160E6",
+              green: "#53bf5a",
+              blue: "#277fcc",
+            },
+          },
+        },
+      };
     </script>
     <title>Earn</title>
-</head>
-<body>
-    <div class="max-w-3xl text-dark mx-auto bg-black">
-        <div class="flex flex-col items-center justify-center gap-2 py-4">
+  </head>
+  <body class="font-[sans-serif]">
+    <div class="max-w-3xl text-dark mx-auto bg-black pb-[55px]">
+      <div class="flex flex-col items-center justify-center gap-2 pt-4">
+        <div class="">
+          <img src="/img/coin.png" alt="" />
+        </div>
+        <span class="text-white font-bold text-xl">Earn more coins</span>
+      </div>
+      <div class="flex flex-col gap-4 mt-4 h-[100vh]">
+        <!-- Hamster Youtube -->
+        <div class="flex flex-col items-start gap-1 mx-2">
+          <span class="text-white text-base mb-2"> Hamster Youtube </span>
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/youtube.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Trump wants Musk as Adviser </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+100,000</span>
+                </div>
+              </div>
+            </div>
             <div class="">
-                <img src="/img/coin.png" alt="">
+              <i class="bi bi-chevron-right text-white text-opacity-10"></i>
             </div>
-            <span class="text-white font-bold text-xl">Earn more coins</span>
+          </div>
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/youtube.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Trump wants Musk as Adviser </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+100,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <i class="bi bi-chevron-right text-white text-opacity-10"></i>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col gap-4 mt-4 h-[100vh]">
-            <!-- Hamster Youtube -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Hamster Youtube
-                </span>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Trump wants Musk as Adviser
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
+        <!-- Daily tasks -->
+        <div class="flex flex-col items-start gap-1 mx-2">
+          <span class="text-white text-base mb-2"> Daily tasks </span>
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/calendar.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Daily reward </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+6,646,000</span>
                 </div>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Trump wants Musk as Adviser
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- Daily tasks -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Daily tasks
-                </span>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/calendar.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Daily reward
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+6,646,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-            
+            <div
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
             </div>
-            <!-- Tasks list -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Tasks list
-                </span>
-                <!-- face book -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/facebook.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                               Follow us on Facebook
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
-                </div>
-                <!-- instagram -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Follow us on Instagram
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
-                </div>
-                <!-- TG channel -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/telegram_channel-1.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Join our TG channel
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-                <!-- x account  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/x.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Follow our X account
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-                <!--choose exchange  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/hamster.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Choose your  exchange
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-                <!--invite friends  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/friends.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Invite 3 friends
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+25,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- bottom navbar -->
-        <div class="bg-primary800 flex items-end justify-between gap-1 px-4 py-2 sticky bottom-0">
-            <button class="flex flex-col items-center gap-1 active:bg-primary900 active:rounded-xl">
-                <img src="../img/binance.png" alt="">
-                <span class="text-[10px] text-center text-gray700">Exchange</span>
-            </button>
-            <button class="flex flex-col items-center gap-1">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.2">
-                        <path
-                            d="M3.34278 6.56429C2.92028 6.14608 2.93385 5.46429 3.34278 5.05L3.76778 4.62143L5.04636 3.34285C5.07279 3.31821 5.101 3.28749 5.13208 3.27142C5.33722 3.10362 5.59739 3.01802 5.86209 3.03122C6.12679 3.04441 6.37715 3.15548 6.56458 3.34285L8.25388 5.03214C8.3853 5.165 8.82173 5.60358 8.94709 5.72858C9.1338 5.91614 9.24471 6.16602 9.25855 6.4303C9.27239 6.69459 9.18819 6.95469 9.02209 7.16073C8.98102 7.21001 8.57745 7.61716 8.52209 7.67144L7.67209 8.5218L7.24351 8.95038C6.84708 9.36538 6.12494 9.36574 5.72886 8.95038L3.34278 6.56429ZM2.76421 4.6175C2.551 4.36605 2.44002 4.04369 2.45325 3.71429C2.46648 3.38488 2.60295 3.07246 2.83564 2.83892C3.31064 2.36392 4.11064 2.33892 4.61779 2.76392C4.59279 2.78892 4.56422 2.81392 4.54279 2.83892L2.76421 4.6175ZM9.02566 8.17537C9.07745 8.11216 9.48638 7.72323 9.52924 7.66823L19.6164 17.7515C20.1275 18.2454 20.1282 19.1226 19.6164 19.6161C19.1221 20.1272 18.2461 20.1279 17.7521 19.6161L7.66852 9.53252C7.70066 9.50395 7.72566 9.47895 7.74709 9.45395L9.02566 8.17537ZM0.935628 11.8757C1.49388 10.3062 2.26928 8.82261 3.23921 7.46823L5.07493 9.30395C3.32921 11.3768 1.84992 13.694 0.678126 16.1301C0.617412 16.2586 0.492412 16.3336 0.356697 16.3336C0.150982 16.3365 -0.0258054 16.1486 0.0031233 15.9372C0.153461 14.5515 0.466685 13.1883 0.935628 11.8757ZM16.1268 0.678197C13.6782 1.85356 11.3863 3.3305 9.30424 5.07464C8.94816 4.71393 7.84352 3.6125 7.46851 3.23892C9.96802 1.45598 12.8821 0.342096 15.9336 0.00319419C16.3228 -0.0471632 16.4875 0.512125 16.1268 0.678197Z"
-                            fill="white" />
-                    </g>
-                </svg>
-                <span class="text-[10px] text-center text-gray700">Mine</span>
-            </button>
-            <button class="flex flex-col items-center gap-1">
-                <span class="text-white scale-[1] opacity-[.2]">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Controller--Streamline-Core"
-                        height="24" width="24">
-                        <desc>Controller Streamline Icon: https://streamlinehq.com</desc>
-                        <g id="controller--remote-quadcopter-drones-flying-drone-control-controller-technology-fly">
-                            <path id="Subtract" fill="currentColor" fill-rule="evenodd"
-                                d="M17.88942857142857 0.8554679999999999c0.5917714285714285 0 1.0714285714285714 0.47969485714285715 1.0714285714285714 1.0714234285714286v1.6684285714285711c0 1.5385028571428572 -1.247142857142857 2.7857142857142856 -2.785662857142857 2.7857142857142856H13.766639999999999c-0.35504571428571424 0 -0.6428571428571428 0.2878285714285714 -0.6428571428571428 0.6428571428571428v0.7316228571428571h3.1831199999999997c3.132925714285714 0 5.82024 2.25228 6.189668571428571 5.305834285714286l0.6142285714285715 5.079394285714286c0.32708571428571426 2.7048 -1.8778285714285712 5.002114285714286 -4.614342857142857 5.002114285714286 -1.7529257142857142 0 -3.375342857142857 -0.9548571428571428 -4.164754285714285 -2.496342857142857l-0.37517142857142854 -0.7325142857142857H10.04370857142857l-0.37517142857142854 0.7325142857142857c-0.7894285714285714 1.5414857142857141 -2.4118285714285714 2.496342857142857 -4.16484 2.496342857142857 -2.7364457142857144 0 -4.941426857142857 -2.2973142857142856 -4.6142965714285715 -5.002114285714286L1.5037028571428572 13.06134857142857c0.36930857142857143 -3.053554285714285 3.0566228571428566 -5.305834285714286 6.189617142857142 -5.305834285714286h3.2876057142857142v-0.7316228571428571c0 -1.5385028571428572 1.2471942857142857 -2.7857142857142856 2.7857142857142856 -2.7857142857142856h2.4085542857142856c0.35504571428571424 0 0.6428571428571428 -0.28781142857142855 0.6428571428571428 -0.6428571428571428v-1.6684285714285711c0 -0.5917285714285714 0.47977714285714285 -1.0714234285714286 1.0713771428571428 -1.0714234285714286ZM7.972097142857142 10.928571428571429c0.5917371428571429 0 1.0714285714285714 0.47969142857142855 1.0714285714285714 1.0714285714285714v0.9094628571428571h0.9090342857142857c0.5917371428571429 0 1.0714285714285714 0.47969142857142855 1.0714285714285714 1.0714285714285714s-0.47969142857142855 1.0714285714285714 -1.0714285714285714 1.0714285714285714h-0.9090342857142857v0.909222857142857c0 0.5917371428571429 -0.47969142857142855 1.0714285714285714 -1.0714285714285714 1.0714285714285714s-1.0714285714285714 -0.47969142857142855 -1.0714285714285714 -1.0714285714285714v-0.909222857142857h-0.9096342857142856c-0.5917371428571429 0 -1.0714285714285714 -0.47969142857142855 -1.0714285714285714 -1.0714285714285714s0.47969142857142855 -1.0714285714285714 1.0714285714285714 -1.0714285714285714h0.9096342857142856V12c0 -0.5917371428571429 0.47969142857142855 -1.0714285714285714 1.0714285714285714 -1.0714285714285714Zm9.112834285714285 2.7774685714285714c-0.7078114285714285 0 -1.2816 -0.5737885714285714 -1.2816 -1.2815828571428571 0 -0.7078114285714285 0.5737885714285714 -1.2816 1.2816 -1.2816 0.7078114285714285 0 1.2815828571428571 0.5737885714285714 1.2815828571428571 1.2816 0 0.7077942857142857 -0.5737714285714285 1.2815828571428571 -1.2815828571428571 1.2815828571428571Zm-3.8280342857142853 1.2651428571428571 0.00047999999999999996 0.029194285714285714c0.015531428571428571 0.6943028571428571 0.5832342857142857 1.2523714285714285 1.2812742857142856 1.2523714285714285 0.7077942857142857 0 1.2815828571428571 -0.5737885714285714 1.2815828571428571 -1.2816l-0.00047999999999999996 -0.029177142857142856c-0.015531428571428571 -0.6943199999999999 -0.5832342857142857 -1.2523714285714285 -1.2812742857142856 -1.2523714285714285 -0.7077942857142857 0 -1.2815828571428571 0.5737885714285714 -1.2815828571428571 1.2815828571428571Z"
-                                clip-rule="evenodd" stroke-width="1"></path>
-                        </g>
-                    </svg>
-                </span>
-                <span class="text-[10px] text-center text-gray700">playground</span>
-            </button>
-            <button class="flex flex-col items-center gap-1">
-                <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g opacity="0.2">
-                        <path
-                            d="M5.09901 7.01112C6.50707 7.01112 7.64852 5.86967 7.64852 4.46162C7.64852 3.05356 6.50707 1.91211 5.09901 1.91211C3.69096 1.91211 2.54951 3.05356 2.54951 4.46162C2.54951 5.86967 3.69096 7.01112 5.09901 7.01112Z"
-                            fill="white" />
-                        <path
-                            d="M8.5026 8.79579C7.841 9.29385 7.30426 9.93892 6.9348 10.6801C6.56534 11.4212 6.37327 12.2381 6.37376 13.0662V13.3849H0.956065C0.433416 13.3849 0 12.9515 0 12.4288V11.7915C0 9.85383 1.56795 8.28589 3.50557 8.28589H6.69245C7.35532 8.28589 7.97995 8.4771 8.5026 8.79579Z"
-                            fill="white" />
-                        <path
-                            d="M25.495 7.01112C26.9031 7.01112 28.0446 5.86967 28.0446 4.46162C28.0446 3.05356 26.9031 1.91211 25.495 1.91211C24.087 1.91211 22.9455 3.05356 22.9455 4.46162C22.9455 5.86967 24.087 7.01112 25.495 7.01112Z"
-                            fill="white" />
-                        <path
-                            d="M30.5941 11.7915V12.4288C30.5941 12.9515 30.1607 13.3849 29.638 13.3849H24.2203V13.0662C24.2203 11.3198 23.379 9.7646 22.0915 8.79579C22.6141 8.4771 23.2388 8.28589 23.9016 8.28589H27.0885C29.0261 8.28589 30.5941 9.85383 30.5941 11.7915Z"
-                            fill="white" />
-                        <path
-                            d="M15.297 7.64852C17.4091 7.64852 19.1213 5.93634 19.1213 3.82426C19.1213 1.71218 17.4091 0 15.297 0C13.185 0 11.4728 1.71218 11.4728 3.82426C11.4728 5.93634 13.185 7.64852 15.297 7.64852Z"
-                            fill="white" />
-                        <path
-                            d="M18.8026 9.56067H11.7915C10.8619 9.56134 9.97067 9.9309 9.31339 10.5882C8.65612 11.2454 8.28656 12.1367 8.28589 13.0662V14.9784C8.28589 15.5061 8.71421 15.9344 9.24195 15.9344H21.3521C21.6057 15.9344 21.8489 15.8337 22.0281 15.6544C22.2074 15.4751 22.3082 15.2319 22.3082 14.9784V13.0662C22.3075 12.1367 21.9379 11.2454 21.2807 10.5882C20.6234 9.9309 19.7321 9.56134 18.8026 9.56067Z"
-                            fill="white" />
-                    </g>
-                </svg>
-    
-                <span class="text-[10px] text-center text-gray700">Friends</span>
-            </button>
-            <button class="flex flex-col items-center gap-1">
-                <div class="">
-                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.2">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.80097 16.7678C8.18038 16.2903 7.81125 15.719 7.81125 15.0577V11.5433C7.81517 11.5159 7.82142 11.4888 7.82991 11.4625C7.82022 11.4174 7.81399 11.3716 7.81125 11.3256C7.81125 9.01797 12.1902 7.81128 16.5193 7.81128C20.8485 7.81128 25.2274 9.01797 25.2274 11.3256C25.2247 11.3716 25.2185 11.4174 25.2088 11.4625C25.2173 11.4888 25.2235 11.5159 25.2274 11.5433V15.0577C25.2247 15.2975 25.1739 15.5344 25.0782 15.7543C25.0811 15.7561 25.0841 15.758 25.087 15.7598C23.6614 17.7021 20.8471 19.0074 16.8304 19.0074C13.5565 19.0074 10.7124 18.1402 8.80097 16.7678ZM17.1414 14.8275C18.61 14.8011 20.0708 14.607 21.4954 14.2491V16.6873C20.0647 17.0845 18.5887 17.2956 17.104 17.3155C17.126 17.2599 17.1386 17.2011 17.1414 17.1414V14.8275ZM15.9347 17.3155C14.45 17.2956 12.974 17.0845 11.5433 16.6873V14.2491C12.9679 14.607 14.4287 14.8011 15.8973 14.8275V17.1414C15.9001 17.2011 15.9127 17.2599 15.9347 17.3155ZM22.7083 13.8634C23.1553 13.6966 23.5828 13.4818 23.9834 13.2227V15.0577C23.9834 15.4184 23.5418 15.8414 22.7394 16.2208V14.0314C22.7351 13.9744 22.7247 13.9181 22.7083 13.8634ZM10.2993 16.2208C9.49689 15.8414 9.05526 15.4184 9.05526 15.0577V13.2227C9.45587 13.4818 9.88341 13.6966 10.3304 13.8634C10.314 13.9181 10.3036 13.9744 10.2993 14.0314V16.2208Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M1.35766 9.30446C1.35916 9.30056 1.36067 9.29667 1.3622 9.29279L1.39952 9.23681C0.534926 8.7081 0 8.04255 0 7.24638V3.73204C0.00392595 3.70461 0.0101688 3.67756 0.0186606 3.65118C0.00897609 3.60611 0.00273756 3.56036 0 3.51434C0 1.20669 4.37893 0 8.7081 0C13.0373 0 17.4162 1.20669 17.4162 3.51434C17.4135 3.56036 17.4072 3.60611 17.3975 3.65118C17.406 3.67756 17.4123 3.70461 17.4162 3.73204V7.24638C17.4135 7.48624 17.3627 7.72311 17.2669 7.94303C17.5268 8.10351 17.7407 8.2666 17.9159 8.42894C15.9451 10.103 12.6949 11.1962 9.0191 11.1962C6.03128 11.1962 3.32461 10.4739 1.35766 9.30446ZM9.33011 7.01624C10.7987 6.98982 12.2596 6.79574 13.6842 6.43777V8.87604C12.2534 9.27319 10.7775 9.48434 9.29279 9.50427C9.31471 9.44866 9.32732 9.38982 9.33011 9.33011V7.01624ZM8.12341 9.50427C6.63872 9.48434 5.16278 9.27319 3.73204 8.87604V6.43777C5.15663 6.79574 6.61745 6.98982 8.08609 7.01624V9.33011C8.08889 9.38982 8.10149 9.44866 8.12341 9.50427ZM14.8971 6.05213C15.344 5.88533 15.7716 5.67052 16.1722 5.41146V7.24638C16.1722 7.60715 15.7306 8.03011 14.9282 8.40954V6.22007C14.9238 6.16314 14.9134 6.10684 14.8971 6.05213ZM2.48803 8.40954C1.68564 8.03011 1.24401 7.60715 1.24401 7.24638V5.41146C1.64462 5.67052 2.07216 5.88533 2.51913 6.05213C2.50278 6.10684 2.49235 6.16314 2.48803 6.22007V8.40954Z"
-                                fill="white" />
-                        </g>
-                    </svg>
-    
+        <!-- Tasks list -->
+        <div class="flex flex-col items-start gap-1 mx-2">
+          <span class="text-white text-base mb-2"> Tasks list </span>
+          <!-- face book -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/facebook.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Follow us on Facebook </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+100,000</span>
                 </div>
-                <span class="text-[10px] text-center text-gray700">Earn</span>
-            </button>
-            <button class="flex flex-col items-center gap-1">
-                <img src="../img/air.png" alt="" class="w-6">
-                <span class="text-[10px] text-center text-gray700">Airdrop</span>
-            </button>
+              </div>
+            </div>
+            <div class="">
+              <i class="bi bi-chevron-right text-white text-opacity-10"></i>
+            </div>
+          </div>
+          <!-- instagram -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/youtube.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Follow us on Instagram </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+100,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <i class="bi bi-chevron-right text-white text-opacity-10"></i>
+            </div>
+          </div>
+          <!-- TG channel -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/telegram_channel-1.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Join our TG channel </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+5,000</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
+            </div>
+          </div>
+          <!-- x account  -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/x.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Follow our X account </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+5,000</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
+            </div>
+          </div>
+          <!--choose exchange  -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/hamster.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Choose your exchange </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+5,000</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
+            </div>
+          </div>
+          <!--invite friends  -->
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="w-12">
+                <img src="/img/friends.png" alt="" />
+              </div>
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Invite 3 friends </span>
+                <div class="flex items-center gap-1">
+                  <div class="w-4 h-4">
+                    <img src="/img/coin.png" alt="" />
+                  </div>
+                  <span class="text-xs">+25,000</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
+            </div>
+          </div>
         </div>
-        <!-- End bottom navbar -->
+      </div>
+      <!-- bottom navbar -->
+      <div
+        class="bg-primary800 flex items-end justify-between px-2 py-1 fixed bottom-0 inset-x-0 z-[1000]"
+      >
+        <a href="./exchange.html" class="flex flex-col items-center py-1 px-2 rounded-xl">
+          <img src="../img/binance.png" alt="" />
+          <span class="text-[10px] text-center text-gray700">Exchange</span>
+        </a>
+        <a href="./mine.html" class="flex flex-col items-center py-1 px-2 rounded-xl">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.2">
+              <path
+                d="M3.34278 6.56429C2.92028 6.14608 2.93385 5.46429 3.34278 5.05L3.76778 4.62143L5.04636 3.34285C5.07279 3.31821 5.101 3.28749 5.13208 3.27142C5.33722 3.10362 5.59739 3.01802 5.86209 3.03122C6.12679 3.04441 6.37715 3.15548 6.56458 3.34285L8.25388 5.03214C8.3853 5.165 8.82173 5.60358 8.94709 5.72858C9.1338 5.91614 9.24471 6.16602 9.25855 6.4303C9.27239 6.69459 9.18819 6.95469 9.02209 7.16073C8.98102 7.21001 8.57745 7.61716 8.52209 7.67144L7.67209 8.5218L7.24351 8.95038C6.84708 9.36538 6.12494 9.36574 5.72886 8.95038L3.34278 6.56429ZM2.76421 4.6175C2.551 4.36605 2.44002 4.04369 2.45325 3.71429C2.46648 3.38488 2.60295 3.07246 2.83564 2.83892C3.31064 2.36392 4.11064 2.33892 4.61779 2.76392C4.59279 2.78892 4.56422 2.81392 4.54279 2.83892L2.76421 4.6175ZM9.02566 8.17537C9.07745 8.11216 9.48638 7.72323 9.52924 7.66823L19.6164 17.7515C20.1275 18.2454 20.1282 19.1226 19.6164 19.6161C19.1221 20.1272 18.2461 20.1279 17.7521 19.6161L7.66852 9.53252C7.70066 9.50395 7.72566 9.47895 7.74709 9.45395L9.02566 8.17537ZM0.935628 11.8757C1.49388 10.3062 2.26928 8.82261 3.23921 7.46823L5.07493 9.30395C3.32921 11.3768 1.84992 13.694 0.678126 16.1301C0.617412 16.2586 0.492412 16.3336 0.356697 16.3336C0.150982 16.3365 -0.0258054 16.1486 0.0031233 15.9372C0.153461 14.5515 0.466685 13.1883 0.935628 11.8757ZM16.1268 0.678197C13.6782 1.85356 11.3863 3.3305 9.30424 5.07464C8.94816 4.71393 7.84352 3.6125 7.46851 3.23892C9.96802 1.45598 12.8821 0.342096 15.9336 0.00319419C16.3228 -0.0471632 16.4875 0.512125 16.1268 0.678197Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+          <span class="text-[10px] text-center text-gray700">Mine</span>
+        </a>
+        <a
+          href="./playground.html"
+          class="flex flex-col items-center py-1 px-2 rounded-xl"
+        >
+          <span class="text-white scale-[1] opacity-[.2]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              id="Controller--Streamline-Core"
+              height="24"
+              width="24"
+            >
+              <desc>Controller Streamline Icon: https://streamlinehq.com</desc>
+              <g
+                id="controller--remote-quadcopter-drones-flying-drone-control-controller-technology-fly"
+              >
+                <path
+                  id="Subtract"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M17.88942857142857 0.8554679999999999c0.5917714285714285 0 1.0714285714285714 0.47969485714285715 1.0714285714285714 1.0714234285714286v1.6684285714285711c0 1.5385028571428572 -1.247142857142857 2.7857142857142856 -2.785662857142857 2.7857142857142856H13.766639999999999c-0.35504571428571424 0 -0.6428571428571428 0.2878285714285714 -0.6428571428571428 0.6428571428571428v0.7316228571428571h3.1831199999999997c3.132925714285714 0 5.82024 2.25228 6.189668571428571 5.305834285714286l0.6142285714285715 5.079394285714286c0.32708571428571426 2.7048 -1.8778285714285712 5.002114285714286 -4.614342857142857 5.002114285714286 -1.7529257142857142 0 -3.375342857142857 -0.9548571428571428 -4.164754285714285 -2.496342857142857l-0.37517142857142854 -0.7325142857142857H10.04370857142857l-0.37517142857142854 0.7325142857142857c-0.7894285714285714 1.5414857142857141 -2.4118285714285714 2.496342857142857 -4.16484 2.496342857142857 -2.7364457142857144 0 -4.941426857142857 -2.2973142857142856 -4.6142965714285715 -5.002114285714286L1.5037028571428572 13.06134857142857c0.36930857142857143 -3.053554285714285 3.0566228571428566 -5.305834285714286 6.189617142857142 -5.305834285714286h3.2876057142857142v-0.7316228571428571c0 -1.5385028571428572 1.2471942857142857 -2.7857142857142856 2.7857142857142856 -2.7857142857142856h2.4085542857142856c0.35504571428571424 0 0.6428571428571428 -0.28781142857142855 0.6428571428571428 -0.6428571428571428v-1.6684285714285711c0 -0.5917285714285714 0.47977714285714285 -1.0714234285714286 1.0713771428571428 -1.0714234285714286ZM7.972097142857142 10.928571428571429c0.5917371428571429 0 1.0714285714285714 0.47969142857142855 1.0714285714285714 1.0714285714285714v0.9094628571428571h0.9090342857142857c0.5917371428571429 0 1.0714285714285714 0.47969142857142855 1.0714285714285714 1.0714285714285714s-0.47969142857142855 1.0714285714285714 -1.0714285714285714 1.0714285714285714h-0.9090342857142857v0.909222857142857c0 0.5917371428571429 -0.47969142857142855 1.0714285714285714 -1.0714285714285714 1.0714285714285714s-1.0714285714285714 -0.47969142857142855 -1.0714285714285714 -1.0714285714285714v-0.909222857142857h-0.9096342857142856c-0.5917371428571429 0 -1.0714285714285714 -0.47969142857142855 -1.0714285714285714 -1.0714285714285714s0.47969142857142855 -1.0714285714285714 1.0714285714285714 -1.0714285714285714h0.9096342857142856V12c0 -0.5917371428571429 0.47969142857142855 -1.0714285714285714 1.0714285714285714 -1.0714285714285714Zm9.112834285714285 2.7774685714285714c-0.7078114285714285 0 -1.2816 -0.5737885714285714 -1.2816 -1.2815828571428571 0 -0.7078114285714285 0.5737885714285714 -1.2816 1.2816 -1.2816 0.7078114285714285 0 1.2815828571428571 0.5737885714285714 1.2815828571428571 1.2816 0 0.7077942857142857 -0.5737714285714285 1.2815828571428571 -1.2815828571428571 1.2815828571428571Zm-3.8280342857142853 1.2651428571428571 0.00047999999999999996 0.029194285714285714c0.015531428571428571 0.6943028571428571 0.5832342857142857 1.2523714285714285 1.2812742857142856 1.2523714285714285 0.7077942857142857 0 1.2815828571428571 -0.5737885714285714 1.2815828571428571 -1.2816l-0.00047999999999999996 -0.029177142857142856c-0.015531428571428571 -0.6943199999999999 -0.5832342857142857 -1.2523714285714285 -1.2812742857142856 -1.2523714285714285 -0.7077942857142857 0 -1.2815828571428571 0.5737885714285714 -1.2815828571428571 1.2815828571428571Z"
+                  clip-rule="evenodd"
+                  stroke-width="1"
+                ></path>
+              </g>
+            </svg>
+          </span>
+          <span class="text-[10px] text-center text-gray700">playground</span>
+        </a>
+        <a
+          href="./friends.html"
+          class="flex flex-col items-center gap-1 py-1 px-2 rounded-xl"
+        >
+          <svg
+            width="31"
+            height="16"
+            viewBox="0 0 31 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.2">
+              <path
+                d="M5.09901 7.01112C6.50707 7.01112 7.64852 5.86967 7.64852 4.46162C7.64852 3.05356 6.50707 1.91211 5.09901 1.91211C3.69096 1.91211 2.54951 3.05356 2.54951 4.46162C2.54951 5.86967 3.69096 7.01112 5.09901 7.01112Z"
+                fill="white"
+              />
+              <path
+                d="M8.5026 8.79579C7.841 9.29385 7.30426 9.93892 6.9348 10.6801C6.56534 11.4212 6.37327 12.2381 6.37376 13.0662V13.3849H0.956065C0.433416 13.3849 0 12.9515 0 12.4288V11.7915C0 9.85383 1.56795 8.28589 3.50557 8.28589H6.69245C7.35532 8.28589 7.97995 8.4771 8.5026 8.79579Z"
+                fill="white"
+              />
+              <path
+                d="M25.495 7.01112C26.9031 7.01112 28.0446 5.86967 28.0446 4.46162C28.0446 3.05356 26.9031 1.91211 25.495 1.91211C24.087 1.91211 22.9455 3.05356 22.9455 4.46162C22.9455 5.86967 24.087 7.01112 25.495 7.01112Z"
+                fill="white"
+              />
+              <path
+                d="M30.5941 11.7915V12.4288C30.5941 12.9515 30.1607 13.3849 29.638 13.3849H24.2203V13.0662C24.2203 11.3198 23.379 9.7646 22.0915 8.79579C22.6141 8.4771 23.2388 8.28589 23.9016 8.28589H27.0885C29.0261 8.28589 30.5941 9.85383 30.5941 11.7915Z"
+                fill="white"
+              />
+              <path
+                d="M15.297 7.64852C17.4091 7.64852 19.1213 5.93634 19.1213 3.82426C19.1213 1.71218 17.4091 0 15.297 0C13.185 0 11.4728 1.71218 11.4728 3.82426C11.4728 5.93634 13.185 7.64852 15.297 7.64852Z"
+                fill="white"
+              />
+              <path
+                d="M18.8026 9.56067H11.7915C10.8619 9.56134 9.97067 9.9309 9.31339 10.5882C8.65612 11.2454 8.28656 12.1367 8.28589 13.0662V14.9784C8.28589 15.5061 8.71421 15.9344 9.24195 15.9344H21.3521C21.6057 15.9344 21.8489 15.8337 22.0281 15.6544C22.2074 15.4751 22.3082 15.2319 22.3082 14.9784V13.0662C22.3075 12.1367 21.9379 11.2454 21.2807 10.5882C20.6234 9.9309 19.7321 9.56134 18.8026 9.56067Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+
+          <span class="text-[10px] text-center text-gray700">Friends</span>
+        </a>
+        <a href="./earn.html" class="flex flex-col items-center py-1 px-2 rounded-xl bg-primary900">
+          <div class="">
+            <svg
+              width="26"
+              height="19"
+              viewBox="0 0 26 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="1">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.80097 16.7678C8.18038 16.2903 7.81125 15.719 7.81125 15.0577V11.5433C7.81517 11.5159 7.82142 11.4888 7.82991 11.4625C7.82022 11.4174 7.81399 11.3716 7.81125 11.3256C7.81125 9.01797 12.1902 7.81128 16.5193 7.81128C20.8485 7.81128 25.2274 9.01797 25.2274 11.3256C25.2247 11.3716 25.2185 11.4174 25.2088 11.4625C25.2173 11.4888 25.2235 11.5159 25.2274 11.5433V15.0577C25.2247 15.2975 25.1739 15.5344 25.0782 15.7543C25.0811 15.7561 25.0841 15.758 25.087 15.7598C23.6614 17.7021 20.8471 19.0074 16.8304 19.0074C13.5565 19.0074 10.7124 18.1402 8.80097 16.7678ZM17.1414 14.8275C18.61 14.8011 20.0708 14.607 21.4954 14.2491V16.6873C20.0647 17.0845 18.5887 17.2956 17.104 17.3155C17.126 17.2599 17.1386 17.2011 17.1414 17.1414V14.8275ZM15.9347 17.3155C14.45 17.2956 12.974 17.0845 11.5433 16.6873V14.2491C12.9679 14.607 14.4287 14.8011 15.8973 14.8275V17.1414C15.9001 17.2011 15.9127 17.2599 15.9347 17.3155ZM22.7083 13.8634C23.1553 13.6966 23.5828 13.4818 23.9834 13.2227V15.0577C23.9834 15.4184 23.5418 15.8414 22.7394 16.2208V14.0314C22.7351 13.9744 22.7247 13.9181 22.7083 13.8634ZM10.2993 16.2208C9.49689 15.8414 9.05526 15.4184 9.05526 15.0577V13.2227C9.45587 13.4818 9.88341 13.6966 10.3304 13.8634C10.314 13.9181 10.3036 13.9744 10.2993 14.0314V16.2208Z"
+                  fill="white"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.35766 9.30446C1.35916 9.30056 1.36067 9.29667 1.3622 9.29279L1.39952 9.23681C0.534926 8.7081 0 8.04255 0 7.24638V3.73204C0.00392595 3.70461 0.0101688 3.67756 0.0186606 3.65118C0.00897609 3.60611 0.00273756 3.56036 0 3.51434C0 1.20669 4.37893 0 8.7081 0C13.0373 0 17.4162 1.20669 17.4162 3.51434C17.4135 3.56036 17.4072 3.60611 17.3975 3.65118C17.406 3.67756 17.4123 3.70461 17.4162 3.73204V7.24638C17.4135 7.48624 17.3627 7.72311 17.2669 7.94303C17.5268 8.10351 17.7407 8.2666 17.9159 8.42894C15.9451 10.103 12.6949 11.1962 9.0191 11.1962C6.03128 11.1962 3.32461 10.4739 1.35766 9.30446ZM9.33011 7.01624C10.7987 6.98982 12.2596 6.79574 13.6842 6.43777V8.87604C12.2534 9.27319 10.7775 9.48434 9.29279 9.50427C9.31471 9.44866 9.32732 9.38982 9.33011 9.33011V7.01624ZM8.12341 9.50427C6.63872 9.48434 5.16278 9.27319 3.73204 8.87604V6.43777C5.15663 6.79574 6.61745 6.98982 8.08609 7.01624V9.33011C8.08889 9.38982 8.10149 9.44866 8.12341 9.50427ZM14.8971 6.05213C15.344 5.88533 15.7716 5.67052 16.1722 5.41146V7.24638C16.1722 7.60715 15.7306 8.03011 14.9282 8.40954V6.22007C14.9238 6.16314 14.9134 6.10684 14.8971 6.05213ZM2.48803 8.40954C1.68564 8.03011 1.24401 7.60715 1.24401 7.24638V5.41146C1.64462 5.67052 2.07216 5.88533 2.51913 6.05213C2.50278 6.10684 2.49235 6.16314 2.48803 6.22007V8.40954Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+          </div>
+          <span class="text-[10px] text-center text-white">Earn</span>
+        </a>
+        <a
+          href="./air-drop.html"
+          class="flex flex-col items-center py-1 px-2 rounded-xl"
+        >
+          <img src="../img/air.png" alt="" class="w-6" />
+          <span class="text-[10px] text-center text-gray700">Airdrop</span>
+        </a>
+      </div>
+      <!-- End bottom navbar -->
     </div>
-</body>
+  </body>
 </html>
