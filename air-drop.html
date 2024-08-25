@@ -33,239 +33,187 @@
             }
         }
     </script>
-    <title>Earn</title>
+    <title>AirDrop</title>
 </head>
 <body>
     <div class="max-w-3xl text-dark mx-auto bg-black">
-        <div class="flex flex-col items-center justify-center gap-2 py-4">
-            <div class="">
-                <img src="/img/coin.png" alt="">
+        <div class="flex flex-col gap-4 mx-2 py-4 h-[100vh]">
+            <div class="flex flex-col items-center justify-center gap-2">
+                <div class="w-[100px]">
+                    <img src="/img/hamster-coin.png" alt="">
+                </div>
+                <span class="text-white font-bold text-xl">AirDrop</span>
             </div>
-            <span class="text-white font-bold text-xl">Earn more coins</span>
-        </div>
-        <div class="flex flex-col gap-4 mt-4 h-[100vh]">
-            <!-- Hamster Youtube -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Hamster Youtube
-                </span>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Trump wants Musk as Adviser
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
+            <div class="bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] rounded-xl py-4 relative" modal-toggler>
+                <div class="flex flex-col items-center text-white">
+                    <span class="text-xs">AirDrop allocation points</span>
+                    <div class="flex items-center gap-1">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <span class="text-sm font-bold">TBA</span>
                     </div>
                 </div>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Trump wants Musk as Adviser
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
+                <div class="text-white text-opacity-50 absolute right-2 top-1">
+                    <i class="bi bi-info-circle-fill"></i>  
                 </div>
             </div>
-            <!-- Daily tasks -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Daily tasks
-                </span>
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/calendar.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Daily reward
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+6,646,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-            
+            <!-- points & withdrawal tabs -->
+            <div class="flex items-center text-white bg-primary800 p-1 rounded-xl justify-between gap-4">
+                <button class="text-xs w-full rounded-xl py-3 active:bg-primary900" tab-toggler data-tab="1">Point</button>
+                <button class="text-xs w-full rounded-xl py-3"tab-toggler data-tab="2">Withdrawal</button>
             </div>
-            <!-- Tasks list -->
-            <div class="flex flex-col items-start gap-1 mx-2">
-                <span class="text-white text-base mb-2">
-                    Tasks list
-                </span>
-                <!-- face book -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
+            <!-- points tab -->
+            <div class="flex flex-col gap-2" tab-content data-tab="1">
+                <!--Passive income  -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
                     <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/facebook.png" alt="">
+                        <div class="w-8">
+                            <img src="/img/coin.png" alt="">
                         </div>
                         <div class="text-white flex flex-col items-start">
                             <span class="text-xs">
-                               Follow us on Facebook
+                                Passive income
                             </span>
                             <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
+                            <div class="">
+                                <i class="bi bi-shield-fill-check text-xs"></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
                             </div>
                         </div>
+                        
                     </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
                 </div>
-                <!-- instagram -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
+                <!-- Earn tasks -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
                     <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/youtube.png" alt="">
+                        <div class="w-8">
+                            <img src="/img/earn_tasks.png" alt="">
                         </div>
                         <div class="text-white flex flex-col items-start">
                             <span class="text-xs">
-                                Follow us on Instagram
+                                Earn tasks
                             </span>
                             <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+100,000</span>
+                            <div
+                                class="">
+                                <i class="bi bi-shield-fill-check text-xs bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] "></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <i class="bi bi-chevron-right text-white text-opacity-10"></i>
-                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
                 </div>
-                <!-- TG channel -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
+                <!-- Friends -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
                     <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/telegram_channel-1.png" alt="">
+                        <div class="w-8">
+                            <img src="/img/friends-1.png" alt="">
                         </div>
                         <div class="text-white flex flex-col items-start">
                             <span class="text-xs">
-                                Join our TG channel
+                                Friends
                             </span>
                             <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
+                            <div
+                                class="">
+                                <i class="bi bi-shield-fill-check text-xs bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] "></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
+                </div>
+                <!-- Achievements -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8">
+                            <img src="/img/achievements.png" alt="">
+                        </div>
+                        <div class="text-white flex flex-col items-start">
+                            <span class="text-xs">
+                                Achievements
+                            </span>
+                            <div class="flex items-center gap-1">
+                            <div
+                                class="">
+                                <i class="bi bi-shield-fill-check text-xs bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] "></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
+                </div>
+                <!-- Telegram Subscription -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8">
+                            <img src="/img/telegram_channel.png" alt="">
+                        </div>
+                        <div class="text-white flex flex-col items-start">
+                            <span class="text-xs">
+                                Telegram Subscription
+                            </span>
+                            <div class="flex items-center gap-1">
+                            <div
+                                class="">
+                                <i class="bi bi-shield-fill-check text-xs bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] "></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
+                </div>
+                <!-- Keys -->
+                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1 ">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8">
+                            <img src="/img/key-2.png" alt="">
+                        </div>
+                        <div class="text-white flex flex-col items-start">
+                            <span class="text-xs">
+                                Keys
+                            </span>
+                            <div class="flex items-center gap-1">
+                            <div
+                                class="">
+                                <i class="bi bi-shield-fill-check text-xs bg-gradient-to-b from-[#1EDD7D] to-[#009C4D] "></i>
+                            </div>
+                                <span class="text-xs">TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-white text-opacity-30"><i class="bi bi-info-circle-fill"></i></div>
+                </div>
+            </div>
+            <!-- withdrawal tab -->
+            <div class="hidden" tab-content data-tab="2">
+               <div class="">
+                <div class="bg-blue flex items-center justify-between w-full rounded-xl px-2 py-2 ">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8">
+                            <img src="/img/airdrop_connect_ton_wallet.png" alt="">
+                        </div>
+                        <span class="text-xs text-white">
+                            Connect your TON wallet
+                        </span>
                     </div>
                     <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
+                    class="bg-white rounded-full z-[60] w-5 h-5 grid place-items-center">
+                    <i class="bi bi-check2 text-blue text-xs"></i>
                 </div>
-                <!-- x account  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/x.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Follow our X account
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
                 </div>
-                <!--choose exchange  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/hamster.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Choose your  exchange
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+5,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
-                <!--invite friends  -->
-                <div class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 ">
-                    <div class="flex items-center gap-2">
-                        <div class="w-12">
-                            <img src="/img/friends.png" alt="">
-                        </div>
-                        <div class="text-white flex flex-col items-start">
-                            <span class="text-xs">
-                                Invite 3 friends
-                            </span>
-                            <div class="flex items-center gap-1">
-                                <div class="w-4 h-4">
-                                    <img src="/img/coin.png" alt="">
-                                </div>
-                                <span class="text-xs">+25,000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                        <i class="bi bi-check2 text-white text-xs"></i>
-                    </div>
-                </div>
+               </div>
             </div>
         </div>
-        <!-- bottom navbar -->
-        <div class="bg-primary800 flex items-end justify-between gap-1 px-4 py-2 sticky bottom-0">
+
+
+         <!-- bottom navbar -->
+         <div class="bg-primary800 flex items-end justify-between gap-1 px-4 py-2 sticky bottom-0">
             <button class="flex flex-col items-center gap-1 active:bg-primary900 active:rounded-xl">
                 <img src="../img/binance.png" alt="">
                 <span class="text-[10px] text-center text-gray700">Exchange</span>
@@ -343,5 +291,65 @@
         </div>
         <!-- End bottom navbar -->
     </div>
+
+    <!-- AirDrop modal -->
+    <aside id="bottom-modal" class="rounded-t-[32px] bg-primary900 p-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]">
+        <div class="closer flex items-end justify-end">
+            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z" fill="white"/>
+            </svg>
+        </div>
+       <div class="flex-col flex items-center gap-2">
+            <div class="h-[70px] w-[70px] mx-auto">
+                <img src="/img/hamster-coin.png" alt="">
+            </div>
+            <div class="flex flex-col items-center gap-1 text-white gap-1">
+                <span class="text-xl">AirDrop points</span>
+                <span class="text-center text-xs">TBA</span>
+                <p class="text-[11px] text-center">
+                    All the activities that users do playing Hamster Kombat convert into AirDrop points. Every single thing is important: the way you play, your social activity, earning keys. All your points will be taken into account, and the AirDrop will be distributed accordingly to each player
+                </p>
+            </div>
+            <div class=" w-full">
+                <button class="bg-purple500 text-white text-base py-5 w-full rounded-xl ">close</button>
+            </div>
+
+       </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+        const modal = document.querySelector("#bottom-modal")
+        const modalTogglers = document.querySelectorAll("[modal-toggler]")
+
+        modal.addEventListener('close', function (e) {
+            modal.classList.remove("bottom-0")
+            modal.classList.add("-bottom-full")
+        })
+        modal.addEventListener('open', function (e) {
+            modal.classList.add("bottom-0")
+            modal.classList.remove("-bottom-full")
+        })
+
+        modal.querySelector('.closer').addEventListener('click', function () {
+            modal.dispatchEvent(new Event("close"))
+        })
+
+        for (tog of modalTogglers) {
+            tog.addEventListener('click', () => modal.dispatchEvent(new Event("open")))
+        }
+    </script>
+    <!-- Tab manager -->
+    <script>
+    const tabTogglers = document.querySelectorAll("[tab-toggler]")
+    const tabContents = document.querySelectorAll("[tab-content]")
+
+    for (let tab of tabTogglers) {
+        tab.addEventListener("click", function (e) {
+            tabContents.forEach(q => q.classList.add('hidden'))
+            const tabID = this.dataset.tab
+            document.querySelector(`[tab-content][data-tab='${tabID}']`).classList.remove("hidden")
+        })
+    }
+    </script>
 </body>
 </html>
