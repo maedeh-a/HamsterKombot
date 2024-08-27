@@ -65,7 +65,11 @@
         <div class="grid grid-cols-3 gap-2">
           <!-- game 1 -->
           <div class="col-span-1">
-            <div class="bg-primary900 rounded-xl relative">
+            <div
+              class="bg-primary900 rounded-xl relative"
+              modal-toggler
+              data-style="7"
+            >
               <div class="p-2">
                 <img src="/img/game1.jpg" alt="" class="rounded-xl" />
               </div>
@@ -341,5 +345,107 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+    <!-- modal style 7-->
+    <aside
+      role="modal"
+      data-style="7"
+      class="z-[1001] h-full bg-primary900 px-4 py-2 inset-x-0 -bottom-full fixed transition-all"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4 py-4">
+        <!-- key code input -->
+        <div class="bg-primary800 rounded-xl p-1 w-full flex items-center">
+          <input
+            type="text"
+            placeholder="Paste the code here"
+            class="bg-transparent placeholder:text-xs grow px-2 focus-visible:none text-white text-sm"
+          />
+          <button
+            class="bg-purple500 text-white text-xs rounded-xl py-3 px-2"
+          >
+            Redeem
+          </button>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 py-8">
+
+          <div
+            class="flex items-center gap-1 border border-white border-opacity-20 px-3 py-1 rounded-xl"
+          >
+            <i class="bi bi-eyeglasses text-opacity-30 text-white"></i>
+            <span class="text-[10px] text-center text-white"
+              >Watch onboarding
+            </span>
+          </div>
+          <div class="w-[200px] mx-auto">
+            <img src="/img/game1.jpg" alt="" class="rounded-xl" />
+          </div>
+          <div class="flex items-center justify-center flex-col gap-3">
+            <span class="text-white">Polysphere</span>
+            <div class="flex items-center gap-1">
+              <i class="bi bi-key-fill text-yellow rotate-[135deg] text-2xl"></i>
+              <span class="text-sm text-white">0/4</span>
+              <span class="text-sm text-white"
+                >Keys received</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full bg-purple500 text-white text-base py-5 w-full rounded-xl"
+        >
+          <a href="" class="flex items-center gap-1 justify-center">
+            <img src="/img/game1.jpg" alt="" class="w-6 rounded" />
+            Play
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
   </body>
 </html>
