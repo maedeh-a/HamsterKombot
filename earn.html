@@ -50,8 +50,11 @@
         <!-- Hamster Youtube -->
         <div class="flex flex-col items-start gap-1 mx-2">
           <span class="text-white text-base mb-2"> Hamster Youtube </span>
+          <!--Youtube 1 -->
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+            modal-toggler
+            data-style="3"
           >
             <div class="flex items-center gap-2">
               <div class="w-12">
@@ -71,6 +74,7 @@
               <i class="bi bi-chevron-right text-white text-opacity-10"></i>
             </div>
           </div>
+          <!-- Youtube 2 -->
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
           >
@@ -98,6 +102,8 @@
           <span class="text-white text-base mb-2"> Daily tasks </span>
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+            modal-toggler
+            data-style="4"
           >
             <div class="flex items-center gap-2">
               <div class="w-12">
@@ -126,7 +132,8 @@
           <!-- face book -->
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
-          >
+            modal-toggler  
+            data-style="5">
             <div class="flex items-center gap-2">
               <div class="w-12">
                 <img src="/img/facebook.png" alt="" />
@@ -170,6 +177,8 @@
           <!-- TG channel -->
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2"
+            modal-toggler  
+            data-style="6"
           >
             <div class="flex items-center gap-2">
               <div class="w-12">
@@ -269,11 +278,17 @@
       <div
         class="bg-primary800 flex items-end justify-between px-2 py-1 fixed bottom-0 inset-x-0 z-[1000]"
       >
-        <a href="./exchange.html" class="flex flex-col items-center py-1 px-2 rounded-xl">
+        <a
+          href="./exchange.html"
+          class="flex flex-col items-center py-1 px-2 rounded-xl"
+        >
           <img src="../img/binance.png" alt="" />
           <span class="text-[10px] text-center text-gray700">Exchange</span>
         </a>
-        <a href="./mine.html" class="flex flex-col items-center py-1 px-2 rounded-xl">
+        <a
+          href="./mine.html"
+          class="flex flex-col items-center py-1 px-2 rounded-xl"
+        >
           <svg
             width="20"
             height="20"
@@ -360,7 +375,10 @@
 
           <span class="text-[10px] text-center text-gray700">Friends</span>
         </a>
-        <a href="./earn.html" class="flex flex-col items-center py-1 px-2 rounded-xl bg-primary900">
+        <a
+          href="./earn.html"
+          class="flex flex-col items-center py-1 px-2 rounded-xl bg-primary900"
+        >
           <div class="">
             <svg
               width="26"
@@ -397,5 +415,367 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+
+    <!-- modal style 3 -->
+    <aside
+      role="modal"
+      data-style="3"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-2 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-3">
+        <div class="h-[85px] w-[85px] mx-auto">
+          <img src="/img/youtube.png" alt="" />
+        </div>
+        <div class="flex flex-col items-center gap-1 text-white gap-1">
+          <span class="text-xl font-bold text-center"
+            >FREEDUROV Global <br />
+            post-arrest support</span
+          >
+          <p class="text-[11px] text-center">
+            Durov’s Arrest Reaction, Trump’s DeFi project, JPMorgan’s BTC mining
+            forecast ⚡️ Hamster News
+          </p>
+        </div>
+        <div class="bg-purple500 text-white px-8 py-1 rounded-xl">
+          <a href="#d" class="text-xs font-medium">Watch video</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-6 h-6">
+            <img src="/img/coin.png" alt="" />
+          </div>
+          <span class="text-base text-white font-bold">+100,000</span>
+        </div>
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl"
+          >
+            Check
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- modal style 4 daily reward -->
+    <aside
+      role="modal"
+      data-style="4"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-2 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="h-[85px] w-[85px] mx-auto relative">
+          <div
+            class="h-[85px] w-[85px] absolute bg-purple300 blur-lg z-[10]"
+          ></div>
+          <img src="/img/calendar.png" alt="" class="z-[30] relative" />
+        </div>
+        <div class="flex flex-col items-center gap-1 text-white gap-1">
+          <span class="text-xl font-bold text-center">Daily reward</span>
+          <p class="text-[11px] text-center">
+            Accrue coins for logging into the game daily without skipping
+          </p>
+        </div>
+        <div class="grid grid-cols-4 w-full gap-2">
+          <!-- day 1 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 1</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">500</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 2 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 2</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">1k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 3 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 3</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">2.5k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 4 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 4</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">5k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 5 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 5</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">15k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 6 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 6</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">25k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 7 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 7</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">100k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 8 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg-gradient-to-b from-[#1EDD7D] to-[#02733a] rounded-xl py-1"
+            >
+              <span class="text-xs font-bold">Day 8</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">500k</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 9 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg- rounded-xl py-1 bg-primary800 opacity-50"
+            >
+              <span class="text-xs font-bold">Day 9</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">1M</span>
+              </div>
+            </div>
+          </div>
+          <!-- day 10 -->
+          <div class="col-span-1">
+            <div
+              class="flex flex-col text-white items-center justify-center gap-1 bg- rounded-xl py-1 bg-primary800 opacity-50"
+            >
+              <span class="text-xs font-bold">Day 10</span>
+              <div class="flex items-center gap-1 flex-col">
+                <div class="w-5 h-5">
+                  <img src="/img/coin.png" alt="" />
+                </div>
+                <span class="text-xs text-white font-bold">5M</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex items-center">
+          <span
+            class="bg-primary800 text-white text-base py-3 w-full rounded-xl text-center"
+          >
+            Come back tomorrow
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- modal style 5 -->
+    <aside
+      role="modal"
+      data-style="5"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-2 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-3">
+        <div class="h-[85px] w-[85px] mx-auto">
+          <img src="/img/facebook.png" alt="" />
+        </div>
+        <span class="text-xl font-bold text-center text-white">Follow us on Facebook</span>
+        <div class="bg-purple500 text-white px-8 py-1 rounded-xl">
+          <a href="#d" class="text-xs font-medium">Join</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-6 h-6">
+            <img src="/img/coin.png" alt="" />
+          </div>
+          <span class="text-base text-white font-bold">+100,000</span>
+        </div>
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl"
+          >
+            Check
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- modal style 6 -->
+    <aside
+      role="modal"
+      data-style="6"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-3">
+        <div class="h-[85px] w-[85px] mx-auto">
+          <img src="/img/telegram_channel-1.png" alt="" />
+        </div>
+        <span class="text-xl font-bold text-center text-white">Join our TG channel</span>
+        <div class="bg-purple500 text-white px-8 py-1 rounded-xl">
+          <a href="#d" class="text-xs font-medium">Join</a>
+        </div>
+        <div class="flex items-center gap-1">
+          <div class="w-6 h-6">
+            <img src="/img/coin.png" alt="" />
+          </div>
+          <span class="text-base text-white font-bold">+5,000</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
   </body>
 </html>
