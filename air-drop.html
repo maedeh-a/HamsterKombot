@@ -52,7 +52,7 @@
           modal-toggler
           data-style="1"
         >
-          <div class="flex flex-col items-center text-white">
+          <div class="flex flex-col items-center text-white gap-1">
             <span class="text-xs">AirDrop allocation points</span>
             <div class="flex items-center gap-[2px]">
               <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -264,8 +264,6 @@
           </div>
           <!-- Telegram Subscription -->
           <div
-            modal-toggler
-            data-style="2"
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1"
           >
             <div class="flex items-center gap-2">
@@ -347,9 +345,11 @@
         </div>
         <!-- withdrawal tab -->
         <div class="hidden" tab-content data-tab="2">
-          <div class="">
+          <div class="" >
             <div
               class="bg-blue flex items-center justify-between w-full rounded-xl px-2 py-2"
+              modal-toggler
+              data-style="2"
             >
               <div class="flex items-center gap-2">
                 <div class="w-8">
@@ -518,7 +518,7 @@
       <!-- End bottom navbar -->
     </div>
 
-    <!-- AirDrop modal -->
+    <!-- modal style 1 -->
     <aside
       role="modal"
       data-style="1"
@@ -546,8 +546,31 @@
           <img src="/img/hamster-coin.png" alt="" />
         </div>
         <div class="flex flex-col items-center gap-1 text-white gap-1">
-          <span class="text-xl">AirDrop points</span>
-          <span class="text-center text-xs">TBA</span>
+          <span class="text-xl font-bold">AirDrop points</span>
+          <div class="flex items-center gap-1">
+            <div class="">
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.0001 20C13.0001 13.9249 17.925 9 24.0001 9C30.0753 9 35.0001 13.9249 35.0001 20C35.0001 26.0751 30.0753 31 24.0001 31C17.925 31 13.0001 26.0751 13.0001 20Z"
+                  fill="#1EDD7D"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M31.0001 34.391C36.328 31.7942 39.999 26.3258 39.999 20C39.999 11.1634 32.8356 4 23.999 4C15.1625 4 7.99902 11.1634 7.99902 20C7.99902 26.3267 11.6711 31.7957 17.0001 34.3921V43.0001C17.0001 43.3689 17.2031 43.7078 17.5283 43.8818C17.8534 44.0558 18.248 44.0367 18.5548 43.8322L24.0001 40.202L29.4454 43.8322C29.7523 44.0367 30.1468 44.0558 30.472 43.8818C30.7971 43.7078 31.0001 43.3689 31.0001 43.0001V34.391ZM23.999 34C31.731 34 37.999 27.732 37.999 20C37.999 12.268 31.731 6 23.999 6C16.267 6 9.99902 12.268 9.99902 20C9.99902 27.732 16.267 34 23.999 34Z"
+                  fill="#1EDD7D"
+                />
+              </svg>
+            </div>
+            <span class="text-center text-xs font-bold">TBA</span>
+          </div>
           <p class="text-[11px] text-center">
             All the activities that users do playing Hamster Kombat convert into
             AirDrop points. Every single thing is important: the way you play,
@@ -558,14 +581,14 @@
         </div>
         <div class="w-full">
           <button
-            class="bg-purple500 text-white text-base py-5 w-full rounded-xl"
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer"
           >
             close
           </button>
         </div>
       </div>
     </aside>
-
+    <!-- modal style 2  -->
     <aside
       role="modal"
       data-style="2"
@@ -588,19 +611,30 @@
           />
         </svg>
       </div>
-      <div class="flex-col flex items-center gap-2">
+      <div class="flex-col flex items-center gap-3 py-6">
         <div class="h-[70px] w-[70px] mx-auto">
-          <img src="/img/hamster-coin.png" alt="" />
+          <img src="/img/airdrop_connect_ton_wallet.png" alt="" />
         </div>
-        <div class="flex flex-col items-center gap-1 text-white gap-1">
-          style 2 body
+        <div class="flex flex-col items-center text-white gap-1">
+         <span class="text-2xl font-bold text-center">
+          Your TON wallet is
+          <br>
+           connected
+         </span>
+         <span class="text-xs">You can disconnect it or copy wallet address</span>
         </div>
-        <div class="w-full">
-          <button
-            class="closer bg-purple500 text-white text-base py-5 w-full rounded-xl"
-          >
-            close
-          </button>
+        <div class="w-full flex items-center gap-1">
+         <div class="bg-primary800 rounded px-2 py-1">
+            <button class="text-white text-opacity-60"><i class="bi bi-x-lg"></i></button>
+         </div>
+         <div class="flex items-center text-white text-opacity-60 justify-between w-full bg-primary800 rounded px-2 py-1">
+            <div class="">
+              <span><i class="bi bi-wallet"></i></span>
+              <a href="" class="text-xs">UQDakkEQ...XYNAsMks</a>
+            </div>
+            <button class=""><i class="bi bi-copy"></i></button>
+         </div>
+
         </div>
       </div>
     </aside>
