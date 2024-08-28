@@ -56,13 +56,47 @@
             </div>
           </div>
           <!-- key -->
-          <div class="bg-dark900 flex items-center rounded-2xl p-1 gap-1 flex">
+          <div
+            class="bg-dark900 flex items-center rounded-2xl p-1 gap-1 flex relative"
+          >
             <i class="bi bi-key-fill text-yellow rotate-[135deg]"></i>
             <span class="text-white">17</span>
 
             <button class="text-dark800">
               <i class="bi bi-chevron-right text-gray700"></i>
             </button>
+            <div class="absolute top-0 right-0">
+              <div
+                class="flex flex-col bg-primary900 rounded-xl px-2 py-3 gap-2 border border-gray800"
+              >
+                <span class="text-[10px] text-white"
+                  >Play games,get codes and earn keys</span
+                >
+                <div class="flex flex-col items-start gap-1">
+                  <span class="text-[10px] text-white">Enter the code</span>
+                  <div
+                    class="bg-primary800 rounded-xl p-1 w-full flex items-center"
+                  >
+                    <input
+                      type="text"
+                      class="bg-transparent placeholder:text-xs grow px-2 focus-visible:none text-white text-sm"
+                    />
+                    <button
+                      class="bg-purple500 text-white text-[10px] rounded py-1 px-2"
+                    >
+                      Redeem
+                    </button>
+                  </div>
+                </div>
+                <div class="w-full flex border-t border-t-gray800">
+                  <a href="/playground.html"
+                    class="bg-gradient-to-r from-orange-600 to-amber-300 text-white text-[10px] rounded py-2 px-2 w-full text-center"
+                  >
+                    Go to games
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="grid grid-cols-8 items-center gap-4">
