@@ -19,12 +19,14 @@
               gray900: "#676155",
               gray800: "#332f26",
               gray700: "#928e82",
+              gray600: "#95979A",
               primary900: "#1c1f24",
               primary800: "#272a2f",
               purple100: "#5155DA",
               purple200: "#2B2D74",
               purple300: "#35389E",
               purple400: "#1C2848",
+              purple500: "#5256D5",
               yellow: "#ffc526",
               blurcolor: "#5160E6",
               green: "#53bf5a",
@@ -112,8 +114,9 @@
                     <img src="../img/coin.png" alt="" class="w-full h-full" />
                   </div>
                   <span class="text-xs font-bold text-white"> +2.54M </span>
-                  <button class="text-gray900">
-                    <i class="bi bi-exclamation-circle-fill"></i>
+                  <!-- modal profit -->
+                  <button class="text-gray900" modal-toggler data-style="10">
+                    <i class="bi bi-info-circle-fill"></i>
                   </button>
                 </div>
               </div>
@@ -284,13 +287,15 @@
             <!-- boost -->
             <div class="flex items-center gap-2">
               <img src="../img/spaceship2.png" alt="" class="w-9" />
-              <a href="./boost.html" class="text-sm font-bold text-white">Boost</a>
+              <a href="./boost.html" class="text-sm font-bold text-white"
+                >Boost</a
+              >
             </div>
           </div>
         </div>
       </main>
       <!-- End main -->
-     
+
       <!-- bottom navbar -->
       <div
         class="bg-primary800 flex items-end justify-between px-2 py-1 fixed bottom-0 inset-x-0 z-[1000]"
@@ -432,7 +437,88 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+    <!-- modal style 10  profit-->
+    <aside
+      role="modal"
+      data-style="10"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="h-[90px] w-[90px] mx-auto relative">
+          <div
+            class="h-[80px] w-[80px] top-1 left-3 rounded-full absolute bg-purple300 blur-lg z-[10]"
+          ></div>
+          <img src="/img/rocket.png" alt="" class="z-[30] relative" />
+        </div>
+        <div class="flex flex-col items-center gap-1 text-white gap-4">
+          <span class="text-center text-2xl font-bold">Boost your profit</span>
+          <span class="text-center text-xs font-light"
+            >Tap the Mining menu to buy upgrades for <br />
+            your exchange</span
+          >
+          <span class="text-center text-xs font-light"
+            >Earn even when offline up to 3 hours</span
+          >
+        </div>
 
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer flex items-center justify-center gap-1"
+          >
+            Start mining
+            <img src="../img/coin.png" alt="" class="w-6" />
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
     <script>
       /* Store the element in el */
       let el = document.getElementById("tilt");
