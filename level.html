@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="master.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -36,32 +37,54 @@
     </script>
     <title>level</title>
   </head>
-  <body class="font-[sans-serif]">
+  <body class="font-[sans-serif] select-none">
     <div class="max-w-3xl text-dark mx-auto bg-black min-h-screen pb-[55px]">
       <div class="mx-2 flex flex-col gap-4 pt-4">
         <!-- level -->
         <div class="flex flex-col items-center justify-center relative w-full">
-          <div class="bg-gradient-to-r from-indigo-900 to-blue-700 to-indigo-600 absolute blur-2xl w-[250px] h-[250px] z-[10] "></div>
+          <div
+            class="bg-gradiant-custom absolute blur-2xl w-[250px] h-[250px] z-[10]"
+          ></div>
           <div class="flex flex-col items-center z-[20] w-full">
-            <div class="w-[170px] h-[170px] flex flex-col items-center justify-center bg-white bg-opacity-5 rounded-xl">
-                <div class="w-40 bg-white bg-opacity-10 rounded-xl">
-                    <img src="/img/Grandmaster.png" alt="" />
-                </div>
+            <div class="flex items-center justify-center rounded-xl gap-12">
+              <button
+                id="prevButton"
+                class="text-white scale-[1.5]"
+                onclick="goPrev()"
+              >
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <div
+                class="w-[170px] h-[170px] bg-white bg-opacity-10 rounded-xl shadow-[0_0_0_6px_#fff1] mb-4"
+              >
+                <img src="/img/Grandmaster.png" alt="" id="level-img" />
+              </div>
+              <button
+                id="nextButton"
+                class="text-white scale-[1.5]"
+                onclick="goNext()"
+              >
+                <i class="bi bi-chevron-right"></i>
+              </button>
             </div>
-           
+
             <div class="flex flex-col items-center gap-1 w-full">
-              <span class="text-white text-xl">Grandmaster</span>
-              <div class="text-white text-opacity-60 text-xs font-bold">
+              <span class="text-white text-xl" id="level-title"></span>
+              <div
+                class="text-white text-opacity-60 text-xs font-bold"
+                id="level-from"
+              >
                 <span class="">944.95M</span>
                 <span class="">/</span>
                 <span class="">1B</span>
               </div>
               <div
-                class="w-full bg-gray900 rounded-xl h-2 relative overflow-hidden border border-[#7772]"
+                id="level-indicator"
+                class="w-full bg-gray900 rounded-xl h-2 relative overflow-hidden border border-[#7772] mt-4"
               >
                 <div
+                  id="level-indicator-inner"
                   class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-emerald-300 via-pink-400 to-purple-400"
-                  style="width: 90%"
                 ></div>
               </div>
             </div>
@@ -511,5 +534,167 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+
+    <script>
+      const levels = [
+        {
+          id: 1,
+          title: "Silver",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-1.png",
+          start: "5K",
+          startAmount: 5000,
+        },
+        {
+          id: 2,
+          title: "Gold",
+          colors: ["red", "green"],
+          imgSrc: "/img/levels/level-2.png",
+          start: "25K",
+          startAmount: 25000,
+        },
+        {
+          id: 3,
+          title: "Platinum",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-3.png",
+          start: "100K",
+          startAmount: 100000,
+        },
+        {
+          id: 4,
+          title: "Diamond",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-4.png",
+          start: "1M",
+          startAmount: 1000000,
+        },
+        {
+          id: 5,
+          title: "Epic",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-5.png",
+          start: "2M",
+          startAmount: 2000000,
+        },
+        {
+          id: 6,
+          title: "Legendary",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-6.png",
+          start: "10M",
+          startAmount: 10000000,
+        },
+        {
+          id: 7,
+          title: "Master",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-1.png",
+          start: "50M",
+          startAmount: 50000000,
+        },
+        {
+          id: 8,
+          title: "Grandmaster",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-1.png",
+          start: "100M",
+
+          startAmount: 100000000,
+        },
+        {
+          id: 9,
+          title: "Lord",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-1.png",
+          start: "1B",
+          startAmount: 1000000000,
+        },
+        {
+          id: 10,
+          title: "Creator",
+          colors: ["#312e81", "#4f46e5"],
+          imgSrc: "/img/levels/level-1.png",
+          start: "18B",
+          startAmount: 18000000000,
+        },
+      ];
+      const nextButton = document.querySelector("#nextButton");
+      const prevButton = document.querySelector("#prevButton");
+      const title = document.querySelector("#level-title");
+      const from = document.querySelector("#level-from");
+      const indicator = document.querySelector("#level-indicator");
+      const indicatorInner = document.querySelector("#level-indicator-inner");
+      let currentBalance = 1320546987;
+
+      const detectLevel = (balance) => {
+        let idx = 9;
+
+        while (balance < levels[idx].startAmount) {
+          if (idx === 0) break;
+          idx -= 1;
+        }
+        return levels[idx].id;
+      };
+
+      let actualLevel = detectLevel(currentBalance);
+      let currentLevel = actualLevel;
+
+      const loadLevel = (level) => {
+        const levelObject = levels.find((q) => q.id === level);
+        const nextLevel = levels.find((q) => q.id === level + 1);
+
+        if (level === levels.length) {
+          nextButton.classList.add("invisible");
+          nextButton.classList.add("pointer-events-none");
+        } else {
+          nextButton.classList.remove("invisible");
+          nextButton.classList.remove("pointer-events-none");
+        }
+        if (level === 1) {
+          prevButton.classList.add("invisible");
+          prevButton.classList.add("pointer-events-none");
+        } else {
+          prevButton.classList.remove("invisible");
+          prevButton.classList.remove("pointer-events-none");
+        }
+        title.innerHTML = levelObject.title;
+        if (actualLevel === level) {
+          if (actualLevel === levels.at(-1).id) {
+            from.innerHTML = `${currentBalance.toLocaleString()}`;
+          } else {
+            from.innerHTML = `${currentBalance.toLocaleString()} / ${
+              nextLevel.start
+            }`;
+            indicatorInner.style.width = `${
+              (currentBalance / nextLevel.startAmount) * 100
+            }%`;
+            indicator.classList.remove("hidden");
+          }
+        } else {
+          indicator.classList.add("hidden");
+          from.innerHTML = `From ${levelObject.start}`;
+        }
+        document.documentElement.setAttribute(
+          "style",
+          `--gradiant-start: ${levelObject.colors[0]}`
+        );
+        document.documentElement.setAttribute(
+          "style",
+          `--gradiant-end: ${levelObject.colors[1]}`
+        );
+        document.querySelector("#level-img").src = levelObject.imgSrc
+      };
+      const goNext = () => {
+        currentLevel = Math.min(levels.length, currentLevel + 1);
+        loadLevel(currentLevel);
+      };
+      const goPrev = () => {
+        currentLevel = Math.max(1, currentLevel - 1);
+        loadLevel(currentLevel);
+      };
+
+      loadLevel(currentLevel);
+    </script>
   </body>
 </html>
