@@ -19,16 +19,22 @@
               gray900: "#676155",
               gray800: "#332f26",
               gray700: "#928e82",
+              gray600: "#95979A",
               primary900: "#1c1f24",
               primary800: "#272a2f",
               purple100: "#5155DA",
               purple200: "#2B2D74",
               purple300: "#35389E",
               purple400: "#1C2848",
+              purple500: "#5256D5",
               yellow: "#ffc526",
               blurcolor: "#5160E6",
-              green: "# 53bf5a",
+              green: "#53bf5a",
               blue: "#277fcc",
+              red: "#e1383b",
+              red900: "#362b2f",
+              red800: "#833231",
+              blue900: "#212735",
             },
           },
         },
@@ -41,38 +47,44 @@
       <!-- setting -->
       <div class="flex flex-col gap-2 py-4 mx-2">
         <span class="text-white text-xl font-bold text-center">Settings</span>
-        <div
-          class="bg-primary800 flex items-center justify-between w-full rounded-xl p-2"
-        >
-          <div class="flex items-center gap-2">
-            <div class="text-white flex flex-col items-start">
-              <span class="text-xs"> Select language </span>
-              <span class="text-[11px] text-white text-opacity-30"
-                >English</span
-              >
+        <a href="/select-language.html" class="">
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl p-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Select language </span>
+                <span class="text-[11px] text-white text-opacity-30"
+                  >English</span
+                >
+              </div>
+            </div>
+            <div class="">
+              <i class="bi bi-chevron-right text-white text-opacity-30"></i>
             </div>
           </div>
-          <div class="">
-            <i class="bi bi-chevron-right text-white text-opacity-30"></i>
-          </div>
-        </div>
-        <div
-          class="bg-primary800 flex items-center justify-between w-full rounded-xl p-2"
-        >
-          <div class="flex items-center gap-2">
-            <div class="text-white flex flex-col items-start">
-              <span class="text-xs"> Choose exchange </span>
-              <span class="text-[11px] text-white text-opacity-30"
-                >Binance</span
-              >
+        </a>
+        <a href="/choose-exchage.html" class="">
+          <div
+            class="bg-primary800 flex items-center justify-between w-full rounded-xl p-2"
+          >
+            <div class="flex items-center gap-2">
+              <div class="text-white flex flex-col items-start">
+                <span class="text-xs"> Choose exchange </span>
+                <span class="text-[11px] text-white text-opacity-30"
+                  >Binance</span
+                >
+              </div>
+            </div>
+            <div class="">
+              <i class="bi bi-chevron-right text-white text-opacity-30"></i>
             </div>
           </div>
-          <div class="">
-            <i class="bi bi-chevron-right text-white text-opacity-30"></i>
-          </div>
-        </div>
+        </a>
         <div
           class="bg-primary800 flex items-center justify-between w-full rounded-xl p-2"
+          modal-toggler
+          data-style="11"
         >
           <div class="flex items-center gap-2">
             <div class="text-white flex flex-col items-start">
@@ -251,5 +263,89 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+    <!-- modal style 11 -->
+    <aside
+      role="modal"
+      data-style="11"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="flex flex-col items-center gap-2 text-white gap-4">
+          <span class="text-center font-bold"
+            >Are you sure you want to delete your account?</span
+          >
+          <span class="text-center text-xs font-light"
+            >All your data, including game progress, achievements, and
+            purchases, will be permanently deleted. This action cannot be
+            undone.</span
+          >
+        </div>
+
+        <div class="flex flex-col gap-2 w-full">
+          <div class="w-full">
+            <button
+              class="bg-red text-white text-base py-3 w-full rounded-xl flex items-center justify-center gap-1"
+            >
+              Delete account
+            </button>
+          </div>
+          <div class="w-full">
+            <button
+              class="bg-primary800 border border-white border-opacity-30 text-white text-base py-3 w-full rounded-xl closer flex items-center justify-center gap-1"
+            >
+              cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
   </body>
 </html>

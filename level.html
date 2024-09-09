@@ -30,6 +30,10 @@
               blurcolor: "#5160E6",
               green: "#53bf5a",
               blue: "#277fcc",
+              red: "#e1383b",
+              red900: "#362b2f",
+              red800: "#833231",
+              blue900: "#212735",
             },
           },
         },
@@ -613,7 +617,7 @@
         {
           id: 10,
           title: "Creator",
-          colors: ["#b2987f", "#c88f58"],
+          colors: ["#ffff", "#c88f58"],
           imgSrc: "/img/levels/level-10.png",
           start: "18B",
           startAmount: 18000000000,
@@ -683,7 +687,7 @@
           "style",
           `--gradiant-end: ${levelObject.colors[1]}`
         );
-        document.querySelector("#level-img").src = levelObject.imgSrc
+        document.querySelector("#level-img").src = levelObject.imgSrc;
       };
       const goNext = () => {
         currentLevel = Math.min(levels.length, currentLevel + 1);
