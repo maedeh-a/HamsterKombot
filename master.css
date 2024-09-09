@@ -5,3 +5,43 @@
 .bg-gradiant-custom {
     background: linear-gradient(90deg, var(--gradiant-start), var(--gradiant-end));
 }
+.gradiant-1{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-2{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-3{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-4{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-5{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-6{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-7{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-8{
+    --gradiant-start: white;
+    --gradiant-end: gray;
+}
+.gradiant-9{
+    --gradiant-start: #312e81;
+    --gradiant-end: #4f46e5;
+}
+.gradiant-10{
+    --gradiant-start: red;
+    --gradiant-end: green;
+}

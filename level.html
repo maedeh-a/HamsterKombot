@@ -30,10 +30,6 @@
               blurcolor: "#5160E6",
               green: "#53bf5a",
               blue: "#277fcc",
-              red: "#e1383b",
-              red900: "#362b2f",
-              red800: "#833231",
-              blue900: "#212735",
             },
           },
         },
@@ -544,7 +540,6 @@
         {
           id: 1,
           title: "Silver",
-          colors: ["#312e81", "#4f46e5"],
           imgSrc: "/img/levels/level-1.png",
           start: "5K",
           startAmount: 5000,
@@ -552,7 +547,6 @@
         {
           id: 2,
           title: "Gold",
-          colors: ["red", "green"],
           imgSrc: "/img/levels/level-2.png",
           start: "25K",
           startAmount: 25000,
@@ -560,7 +554,6 @@
         {
           id: 3,
           title: "Platinum",
-          colors: ["#312e81", "#4f46e5"],
           imgSrc: "/img/levels/level-3.png",
           start: "100K",
           startAmount: 100000,
@@ -568,7 +561,6 @@
         {
           id: 4,
           title: "Diamond",
-          colors: ["#312e81", "#4f46e5"],
           imgSrc: "/img/levels/level-4.png",
           start: "1M",
           startAmount: 1000000,
@@ -576,7 +568,6 @@
         {
           id: 5,
           title: "Epic",
-          colors: ["#312e81", "#4f46e5"],
           imgSrc: "/img/levels/level-5.png",
           start: "2M",
           startAmount: 2000000,
@@ -584,7 +575,6 @@
         {
           id: 6,
           title: "Legendary",
-          colors: ["#312e81", "#4f46e5"],
           imgSrc: "/img/levels/level-6.png",
           start: "10M",
           startAmount: 10000000,
@@ -592,16 +582,14 @@
         {
           id: 7,
           title: "Master",
-          colors: ["#312e81", "#4f46e5"],
-          imgSrc: "/img/levels/level-7.png",
+          imgSrc: "/img/levels/level-1.png",
           start: "50M",
           startAmount: 50000000,
         },
         {
           id: 8,
           title: "Grandmaster",
-          colors: ["#312e81", "#4f46e5"],
-          imgSrc: "/img/levels/level-8.png",
+          imgSrc: "/img/levels/level-1.png",
           start: "100M",
 
           startAmount: 100000000,
@@ -609,16 +597,14 @@
         {
           id: 9,
           title: "Lord",
-          colors: ["#907154", "#c88f58"],
-          imgSrc: "/img/levels/level-9.png",
+          imgSrc: "/img/levels/level-1.png",
           start: "1B",
           startAmount: 1000000000,
         },
         {
           id: 10,
           title: "Creator",
-          colors: ["#ffff", "#c88f58"],
-          imgSrc: "/img/levels/level-10.png",
+          imgSrc: "/img/levels/level-1.png",
           start: "18B",
           startAmount: 18000000000,
         },
@@ -644,7 +630,7 @@
       let actualLevel = detectLevel(currentBalance);
       let currentLevel = actualLevel;
 
-      const loadLevel = (level) => {
+      const loadLevel = (level, prev) => {
         const levelObject = levels.find((q) => q.id === level);
         const nextLevel = levels.find((q) => q.id === level + 1);
 
@@ -679,23 +665,19 @@
           indicator.classList.add("hidden");
           from.innerHTML = `From ${levelObject.start}`;
         }
-        document.documentElement.setAttribute(
-          "style",
-          `--gradiant-start: ${levelObject.colors[0]}`
-        );
-        document.documentElement.setAttribute(
-          "style",
-          `--gradiant-end: ${levelObject.colors[1]}`
-        );
-        document.querySelector("#level-img").src = levelObject.imgSrc;
+        document.querySelector(".bg-gradiant-custom").classList.remove("gradiant-"+prev)
+        document.querySelector(".bg-gradiant-custom").classList.add("gradiant-"+level)
+        document.querySelector("#level-img").src = levelObject.imgSrc
       };
       const goNext = () => {
+        const prev = currentLevel;
         currentLevel = Math.min(levels.length, currentLevel + 1);
-        loadLevel(currentLevel);
+        loadLevel(currentLevel, prev);
       };
       const goPrev = () => {
+        const prev = currentLevel;
         currentLevel = Math.max(1, currentLevel - 1);
-        loadLevel(currentLevel);
+        loadLevel(currentLevel, prev);
       };
 
       loadLevel(currentLevel);
