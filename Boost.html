@@ -19,12 +19,14 @@
               gray900: "#676155",
               gray800: "#332f26",
               gray700: "#928e82",
+              gray600: "#95979A",
               primary900: "#1c1f24",
               primary800: "#272a2f",
               purple100: "#5155DA",
               purple200: "#2B2D74",
               purple300: "#35389E",
               purple400: "#1C2848",
+              purple500: "#5256D5",
               yellow: "#ffc526",
               blurcolor: "#5160E6",
               green: "#53bf5a",
@@ -44,8 +46,8 @@
     <div class="max-w-3xl text-dark mx-auto bg-black pb-[55px]">
       <div class="flex flex-col gap-4 mx-2 h-[100vh]">
         <!-- your balance -->
-        <div class="flex flex-col items-center justify-center">
-          <span class="text-xs text-white text-opacity-30">Your balance </span>
+        <div class="flex flex-col items-center justify-center py-4 gap-2">
+          <span class="text-xs text-white text-opacity-50">Your balance </span>
           <div class="flex items-center gap-1 justify-center">
             <div class="h-[42px] w-[42px]">
               <img src="../img/coin.png" alt="" />
@@ -59,6 +61,8 @@
           <span class="text-white text-sm font-bold">Free daily boosters</span>
           <div
             class="bg-primary800 flex items-end justify-between w-full rounded-xl px-2 py-1"
+            modal-toggler
+            data-style="12"
           >
             <div class="flex items-center gap-2">
               <div class="w-12 h-12 flex items-center">
@@ -80,7 +84,7 @@
               </span>
             </div>
           </div>
-          <div class="bg-primary800 w-full rounded-xl px-2 opacity-30 py-1">
+          <div class="bg-primary800 w-full rounded-xl px-2 opacity-50 py-1">
             <div class="flex items-center gap-2">
               <div class="w-12 h-12 flex items-center">
                 <img src="../img/spaceship2.png" alt="" class="w-8" />
@@ -100,6 +104,8 @@
           <span class="text-white text-sm font-bold">boosters</span>
           <div
             class="bg-primary800 flex items-center justify-between w-full rounded-xl px-2 py-1"
+            modal-toggler
+            data-style="13"
           >
             <div class="flex items-center gap-2">
               <div class="w-12">
@@ -287,5 +293,141 @@
       </div>
       <!-- End bottom navbar -->
     </div>
+    <!-- modal style 12-->
+    <aside
+      role="modal"
+      data-style="12"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="h-[90px] w-[90px] mx-auto relative">
+          <img
+            src="/img/energy-svgrepo-com.svg"
+            alt=""
+            class="z-[30] relative"
+          />
+        </div>
+        <div class="flex flex-col items-center text-white gap-2">
+          <span class="text-center text-2xl font-bold">Full energy</span>
+          <span class="text-center text-xs font-light"
+            >Recharge your energy to the maximum and do another round of
+            mining</span
+          >
+          <div class="flex items-center gap-1 mt-2">
+            <img src="../img/coin.png" alt="" class="w-6" />
+            <span class="text-center font-bold text-xl">Free</span>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer flex items-center justify-center gap-1"
+          >
+            Go ahead
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- modal style 13-->
+    <aside
+      role="modal"
+      data-style="13"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="h-[90px] w-[90px] mx-auto relative">
+          <img src="/img/boost-multitap.png" alt="" class="z-[30] relative" />
+        </div>
+        <div class="flex flex-col items-center text-white gap-2">
+          <span class="text-center text-2xl font-bold"> Multitap</span>
+          <span class="text-center text-xs font-light"
+            >Increase the amount of coins you can earn per tap</span
+          >
+         
+        </div>
+         <div class="flex flex-col items-center text-white gap-2">
+            <span class=""> +1 coin for tap for level 14 </span>
+            <div class="flex items-center gap-1">
+              <img src="../img/coin.png" alt="" class="w-6" />
+              <span class="text-center font-bold text-xl">8,192,000</span>
+              <div class="w-2 h-2 rounded-full bg-white opacity-20"></div>
+              <span class="text-xl text-opacity-30 text-white">14 lvl</span>
+            </div>
+          </div>
+
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer flex items-center justify-center gap-1"
+          >
+            Go ahead
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
   </body>
 </html>
