@@ -3,45 +3,45 @@
     --gradiant-end: #4f46e5;
 }
 .bg-gradiant-custom {
-    background: linear-gradient(90deg, var(--gradiant-start), var(--gradiant-end));
+    background: linear-gradient(60deg, var(--gradiant-start), var(--gradiant-end));
 }
 .gradiant-1{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #7a95bd;
+    --gradiant-end: #8795a8;
 }
 .gradiant-2{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #f7ae33;
+    --gradiant-end: #fdbe47;
 }
 .gradiant-3{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #77a5bc;
+    --gradiant-end:#8a90ab;
 }
 .gradiant-4{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #2eecf8;
+    --gradiant-end:#0b25fe ;
 }
 .gradiant-5{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #5a68fc;
+    --gradiant-end: #ee66f7;
 }
 .gradiant-6{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #6beafa;
+    --gradiant-end: #09c098;
 }
 .gradiant-7{
-    --gradiant-start: #312e81;
-    --gradiant-end: #4f46e5;
+    --gradiant-start: #0a50f8;
+    --gradiant-end: #2afbdb;
 }
 .gradiant-8{
-    --gradiant-start: white;
-    --gradiant-end: gray;
-}
-.gradiant-9{
     --gradiant-start: #312e81;
     --gradiant-end: #4f46e5;
 }
+.gradiant-9{
+    --gradiant-start: #fddec2;
+    --gradiant-end: #d07427;
+}
 .gradiant-10{
-    --gradiant-start: red;
-    --gradiant-end: green;
+    --gradiant-start: #2594f0;
+    --gradiant-end: #f98343;
 }
