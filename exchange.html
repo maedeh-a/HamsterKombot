@@ -31,11 +31,10 @@
               blurcolor: "#5160E6",
               green: "#53bf5a",
               blue: "#277fcc",
-              red:"#e1383b",
-              red900:"#362b2f",
-              red800:"#833231",
-              blue900:"#212735",
-              
+              red: "#e1383b",
+              red900: "#362b2f",
+              red800: "#833231",
+              blue900: "#212735",
             },
           },
         },
@@ -220,7 +219,7 @@
               class="px-[1px] pt-[2px] bg-gradient-to-b from-transparent to-transparent rounded-2xl relative"
             >
               <div class="p-[2px] rounded-2xl bg-primary800 relative">
-                <a href="#a" class="flex items-center justify-center flex-col">
+                <button class="flex items-center justify-center flex-col w-full" onclick="toggleCipher()">
                   <div class="w-[54px] h-[54px]">
                     <img src="../img/daily_cipher.png" alt="" />
                   </div>
@@ -232,7 +231,7 @@
                     <span>:</span>
                     <span>34</span>
                   </div>
-                </a>
+                </button>
               </div>
               <span
                 class="absolute w-2 h-2 bg-gray700 rounded-full right-2 top-2 z-[2] animate-pulse"
@@ -303,37 +302,45 @@
             </div>
             <span class="text-white text-2xl font-bold">481,476,176</span>
           </div>
-          <!-- Daily cipher active -->
-          <div class="flex items-center justify-between w-full rounded-xl bg-primary800 px-2 py-1 ">
-            <span class="text-white text-xs font-bold">Daily cipher</span>
-            <div class="flex items-center gap-1 bg-gradient-to-r from-purple100 to-pink-400 py-2 px-4 rounded-xl">
-              <div class="w-4 h-4">
-                <img src="../img/coin.png" alt="" class="w-full h-full" />
-              </div>
-              <span class="text-xs font-bold text-white"> +1,000,000 </span>
-            </div>
-          </div>
-          <!-- Daily cipher hamster -->
-            <div class="mx-auto py-4 select-none">
+
+          <section id="hamsterCipher" class="hidden">
+            <!-- Daily cipher active -->
             <div
-              id="tilt"
-              class="bg-gradient-to-b from-red via-blue900 to-blue900 rounded-full relative mx-6 w-[300px] h-[300px] flex z-0"
+              class="flex items-center justify-between w-full rounded-xl bg-primary800 px-2 py-1"
             >
+              <span class="text-white text-xs font-bold">Daily cipher</span>
               <div
-                class="absolute left-[14px] top-[16px] flex z-1 bg-gradient-to-b from-red900 via-red800 to-red900 rounded-full w-[270px] h-[270px]"
+                class="flex items-center gap-1 bg-gradient-to-r from-purple100 to-pink-400 py-2 px-4 rounded-xl"
               >
-                <img
-                  src="../img/image.png"
-                  alt=""
-                  class="absolute top-2 left-[54px] w-[150px] z-[50] pointer-events-none"
-                />
-                <div
-                  class="absolute blur-lg w-[185px] h-[185px] z-[10] rounded-full left-[40px] top-[30px] bg-800"
-                ></div>
+                <div class="w-4 h-4">
+                  <img src="../img/coin.png" alt="" class="w-full h-full" />
+                </div>
+                <span class="text-xs font-bold text-white"> +1,000,000 </span>
               </div>
             </div>
-          </div>
-          <div class="mx-auto py-4 select-none">
+            <!-- Daily cipher hamster -->
+            <div class="mx-auto py-4 select-none">
+              <div
+                id="tilt"
+                class="bg-gradient-to-b from-red via-blue900 to-blue900 rounded-full relative mx-6 w-[300px] h-[300px] flex z-0"
+              >
+                <div
+                  class="absolute left-[14px] top-[16px] flex z-1 bg-gradient-to-b from-red900 via-red800 to-red900 rounded-full w-[270px] h-[270px]"
+                >
+                  <img
+                    src="../img/image.png"
+                    alt=""
+                    class="absolute top-2 left-[54px] w-[150px] z-[50] pointer-events-none"
+                  />
+                  <div
+                    class="absolute blur-lg w-[185px] h-[185px] z-[10] rounded-full left-[40px] top-[30px] bg-800"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="mx-auto py-4 select-none" id="hamster">
             <div
               id="tilt"
               class="bg-gradient-to-t from-purple200 to-purple100 rounded-full relative mx-6 w-[300px] h-[300px] flex z-0"
@@ -684,6 +691,12 @@
           closeRedeemModal();
         }
       });
+    </script>
+    <script>
+      const toggleCipher = () => {
+        document.querySelector("#hamsterCipher").classList.toggle("hidden");
+        document.querySelector("#hamster").classList.toggle("hidden");
+      }
     </script>
   </body>
 </html>
