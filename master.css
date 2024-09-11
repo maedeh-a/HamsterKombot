@@ -45,3 +45,16 @@
     --gradiant-start: #2594f0;
     --gradiant-end: #f98343;
 }
+
+.active[data-tab-id="1"]{
+    color: yellow; 
+}
+.active[data-tab-id="2"]{
+    color: red; 
+    border-bottom: 1px solid red !important;
+}
+[data-tab-id="2"][tab-toggler]{
+    padding-bottom: 8px;
+    padding-inline: 8px;
+    border-bottom: 1px solid #333;
+}
