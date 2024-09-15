@@ -1,764 +1,1374 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                        dark900: "#27292e",
-                        dark800: "#404348",
-                        gray900: "#676155",
-                        gray800: "#332f26",
-                        gray700: "#928e82",
-                        gray600: "#95979A",
-                        primary900: "#1c1f24",
-                        primary800: "#272a2f",
-                        purple100: "#5155DA",
-                        purple200: "#2B2D74",
-                        purple300: "#35389E",
-                        purple400: "#1C2848",
-                        purple500: "#5256D5",
-                        yellow: "#ffc526",
-                        blurcolor: "#5160E6",
-                        green: "#53bf5a",
-                        blue: "#277fcc",
-                        red: "#e1383b",
-                        red900: "#362b2f",
-                        red800: "#833231",
-                        blue900: "#212735",
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              dark900: "#27292e",
+              dark800: "#404348",
+              gray900: "#676155",
+              gray800: "#332f26",
+              gray700: "#928e82",
+              gray600: "#95979A",
+              primary900: "#1c1f24",
+              primary800: "#272a2f",
+              purple100: "#5155DA",
+              purple200: "#2B2D74",
+              purple300: "#35389E",
+              purple400: "#1C2848",
+              purple500: "#5256D5",
+              yellow: "#ffc526",
+              blurcolor: "#5160E6",
+              green: "#53bf5a",
+              blue: "#277fcc",
+              red: "#e1383b",
+              red900: "#362b2f",
+              red800: "#833231",
+              blue900: "#212735",
             },
-        };
+          },
+        },
+      };
     </script>
     <title>Achievements</title>
-</head>
+  </head>
 
-<body class="font-[sans-serif]">
+  <body class="font-[sans-serif]">
     <div class="max-w-3xl text-dark mx-auto bg-black pb-[55px]">
-        <div class="flex flex-col gap-4 py-4">
-            <div class="flex items-center justify-between w-full px-2">
-                <a href="/exchange.html" class="text-blurcolor">
-                    <i class="bi bi-chevron-left"></i>
-                </a>
-                <span class="text-white font-bold"> Achievements </span>
-                <span class="text-white font-bold"> </span>
-            </div>
-
-            <div class="bg-primary900 rounded-t-3xl p-2 flex flex-col gap-5">
-                <!-- upgrade cards -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">Upgrade cards</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">200 cards</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">25 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">50 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px]  rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">200 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">500 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- upgrade cards to level 15-->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">upgrade cards to level 15</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">50 cards</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">5 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">25 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">50 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- upgrade cards to level 25-->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">upgrade cards to level 25</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">1 cards</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">5 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">25 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">50 cards</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- collect coin -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">Collect cions</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">15B coins</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">200M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1,5B coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">15B coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- invite friends -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">invite friends</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">10 friends</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1 friends</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 friends</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">25 friends</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">50 friends</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">100 friends</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- unlock skins -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">unlock skins</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">10 skins</span>
-                        </div>
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1 skin</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">5 skins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 skins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">25 skins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">50 skins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- profit per hour -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-start gap-2">
-                        <div
-                            class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center">
-                            <i class="bi bi-check2 text-white text-xs"></i>
-                        </div>
-                        <span class="text-white text-xs font-bold">profit per hour</span>
-
-
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">100K coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">500K coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">2M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">3M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- watch Hamster youtube videos -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">watch Hamster youtube videos</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">5 videos</span>
-                        </div>
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">100K coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">500K coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">1M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">2M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">3M coins</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- subscribed to Hasmter TG -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">subscribed to Hasmter TG</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">200 Days</span>
-                        </div>
-                    </div>
-                    <div class="flex item-center justify-between gap-2">
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">10 Days</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_3-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">30 Days</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">60 Days</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow">
-                            <div class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">100 Days</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grow grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">200 Days</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- unlock special cards -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center justify-between">
-                        <span class="text-white text-xs font-bold">unlock special cards</span>
-                        <div class="border border-white border-opacity-30 rounded">
-                            <span class="text-white text-[9px] px-1">rescue team</span>
-                        </div>
-                    </div>
-                    <div class="flex items-start justify-start gap-2">
-                        <div class="grow-0 grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white">rescue team</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cheating is bad -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-start justify-start">
-                        <span class="text-white text-xs font-bold">Cheating is bad</span>
-                       
-                    </div>
-                    <div class="flex items-start justify-start gap-2">
-                        <div class="grow-0 grayscale opacity-50">
-                            <div class="px-[1px] pt-[1px] rounded-2xl">
-                                <div class="p-[2px] rounded-2xl bg-primary800 z-[60] relative">
-                                    <a href="#a" class="flex items-center justify-center flex-col py-2 px-1 gap-1">
-                                        <div class="w-[34px] h-[34px]">
-                                            <img src="./img/profile/upgrade_card_2-1.png" alt="" />
-                                        </div>
-                                        <span class="text-[9px] text-nowrap text-white text-center">Cheating is <br> bad</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="flex flex-col gap-4 py-4">
+        <div class="flex items-center justify-between w-full px-2">
+          <a href="/exchange.html" class="text-blurcolor">
+            <i class="bi bi-chevron-left"></i>
+          </a>
+          <span class="text-white font-bold"> Achievements </span>
+          <span class="text-white font-bold"> </span>
         </div>
-    </div>
-</body>
 
+        <div class="bg-primary900 rounded-t-3xl p-2 flex flex-col gap-5">
+          <!-- upgrade cards -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold">Upgrade cards</span>
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">200 cards</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow" modal-toggler data-style="14">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >25 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_3-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >50 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grow grayscale opacity-50"
+                modal-toggler
+                data-style="15"
+              >
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >200 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >500 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- upgrade cards to level 15-->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold"
+                >upgrade cards to level 15</span
+              >
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">50 cards</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >5 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_4.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >25 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >50 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- upgrade cards to level 25-->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold"
+                >upgrade cards to level 25</span
+              >
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">1 cards</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile/upgrade_card_to_level_15_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >5 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile//upgrade_card_to_level_15_4.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >25 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >50 cards</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- collect coin -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold">Collect cions</span>
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">15B coins</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/collect_coin_1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/collect_coin_2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/collect_coin_3.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >200M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/collect_coin_4.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1,5B coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/collect_coin_4-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >15B coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- invite friends -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold">invite friends</span>
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">10 friends</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/invite_friend_1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1 friends</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 friends</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_3-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >25 friends</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >50 friends</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >100 friends</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- unlock skins -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold">unlock skins</span>
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">10 skins</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1 skin</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >5 skins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_3-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 skins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >25 skins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >50 skins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- profit per hour -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-start gap-2">
+              <div
+                class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+              >
+                <i class="bi bi-check2 text-white text-xs"></i>
+              </div>
+              <span class="text-white text-xs font-bold">profit per hour</span>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >100K coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >500K coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_3-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >2M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >3M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- watch Hamster youtube videos -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold"
+                >watch Hamster youtube videos</span
+              >
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">5 videos</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >100K coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >500K coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_3-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >1M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >2M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >3M coins</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- subscribed to Hasmter TG -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold"
+                >subscribed to Hasmter TG</span
+              >
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">200 Days</span>
+              </div>
+            </div>
+            <div class="flex item-center justify-between gap-2">
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile/telegram_subscribe_channel_1.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >10 Days</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile/telegram_subscribe_channel_2.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >30 Days</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile/telegram_subscribe_channel_3.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >60 Days</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow">
+                <div
+                  class="px-[1px] pt-[1px] bg-gradient-to-b from-green to-transparent rounded-2xl"
+                >
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img
+                          src="./img/profile/telegram_subscribe_channel_4.png"
+                          alt=""
+                        />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >100 Days</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grow grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/upgrade_card_2-1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >200 Days</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- unlock special cards -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <span class="text-white text-xs font-bold"
+                >unlock special cards</span
+              >
+              <div class="border border-white border-opacity-30 rounded">
+                <span class="text-white text-[9px] px-1">rescue team</span>
+              </div>
+            </div>
+            <div class="flex items-start justify-start gap-2">
+              <div class="grow-0 grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/cards_unlocked_1.png" alt="" />
+                      </div>
+                      <span class="text-[9px] text-nowrap text-white"
+                        >rescue team</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cheating is bad -->
+          <div class="flex flex-col gap-2">
+            <div class="flex items-start justify-start">
+              <span class="text-white text-xs font-bold">Cheating is bad</span>
+            </div>
+            <div
+              class="flex items-start justify-start gap-2"
+              modal-toggler
+              data-style="16"
+            >
+              <div class="grow-0 grayscale opacity-50">
+                <div class="px-[1px] pt-[1px] rounded-2xl">
+                  <div
+                    class="p-[2px] rounded-2xl bg-primary800 z-[60] relative"
+                  >
+                    <a
+                      href="#a"
+                      class="flex items-center justify-center flex-col py-2 px-1 gap-1"
+                    >
+                      <div class="w-[34px] h-[34px]">
+                        <img src="./img/profile/cheater_1.png" alt="" />
+                      </div>
+                      <span
+                        class="text-[9px] text-nowrap text-white text-center"
+                        >Cheating is <br />
+                        bad</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal style 14 -->
+    <aside
+      role="modal"
+      data-style="14"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="flex flex-col items-center gap-1 text-white">
+          <span class="text-2xl">Unlock skins</span>
+          <div class="w-[70px] mx-auto">
+            <img src="/img/profile/unlock_skin_2.png" alt="" />
+          </div>
+          <span class="text-center text-sm">5 skins</span>
+        </div>
+        <div
+          class="grid grid-cols-3 bg-primary800 p-2 rounded-xl relative w-full"
+        >
+          <div class="col-span-2">
+            <div
+              class="flex flex-col items-center w-full bg-primary900 rounded-xl py-3"
+            >
+              <span class="text-white text-xs">You are among top</span>
+              <span class="text-yellow text-2xl font-bold">3.62%</span>
+              <span class="text-white text-xs"
+                >Of users have this Achievements</span
+              >
+            </div>
+          </div>
+          <div class="col-span-1"></div>
+          <div class="absolute bottom-0 -right-[8px] w-[40%]">
+            <img src="./img/profile/Gold.png" alt="" class="" />
+          </div>
+        </div>
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- modal style 15 -->
+    <aside
+      role="modal"
+      data-style="15"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="flex flex-col items-center gap-1 text-white">
+          <span class="text-2xl">Upgrade cards</span>
+          <div class="w-[70px] mx-auto grayscale">
+            <img src="./img/profile/upgrade_card_1-2.png" alt="" />
+          </div>
+          <span class="text-center text-sm">200 cards</span>
+        </div>
+        <div
+          class="grid grid-cols-3 bg-primary800 p-2 rounded-xl relative w-full"
+        >
+          <div class="col-span-2">
+            <div
+              class="flex flex-col items-center w-full bg-primary900 rounded-xl py-3"
+            >
+              <span class="text-yellow text-2xl font-bold">0%</span>
+              <span class="text-white text-xs"
+                >Of users have this Achievements</span
+              >
+            </div>
+          </div>
+          <div class="col-span-1"></div>
+          <div class="absolute bottom-0 -right-[8px] w-[40%]">
+            <img src="./img/profile/Gold.png" alt="" class="" />
+          </div>
+        </div>
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- modal style 16 -->
+    <aside
+      role="modal"
+      data-style="16"
+      class="z-[1001] rounded-t-[32px] bg-primary900 px-4 py-4 inset-x-0 -bottom-full fixed transition-all shadow-[0_-3px_0_#d3a756,0_-36px_36px_#d3a75655]"
+    >
+      <div class="closer flex items-end justify-end">
+        <svg
+          width="25"
+          height="26"
+          viewBox="0 0 25 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.2"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.4308 25.5526C19.2961 25.5526 24.8616 19.9871 24.8616 13.1218C24.8616 6.25647 19.2961 0.69101 12.4308 0.69101C5.56543 0.69101 0 6.25647 0 13.1218C0 19.9871 5.56543 25.5526 12.4308 25.5526ZM12.4347 14.2173L17.376 19.1663L18.4714 18.0631L13.5302 13.1218L18.4714 8.18051L17.376 7.08505L12.4347 12.0263L7.49341 7.07727L6.39014 8.18051L11.3392 13.1218L6.39014 18.0631L7.49341 19.1663L12.4347 14.2173Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="flex-col flex items-center gap-4">
+        <div class="flex flex-col items-center gap-1 text-white">
+          <span class="text-2xl">Cheating is bad</span>
+          <div class="w-[70px] mx-auto grayscale">
+            <img src="./img/profile/cheater_1.png" alt="" />
+          </div>
+          <p class="text-center text-sm">We have detected some <br> suspicious activity on your <br> account, please keep it fair</p>
+        </div>
+        <div class="w-full">
+          <button
+            class="bg-purple500 text-white text-base py-5 w-full rounded-xl closer"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal manager -->
+    <script>
+      const modals = document.querySelectorAll("[role='modal']");
+      const modalTogglers = document.querySelectorAll("[modal-toggler]");
+
+      for (let modal of modals) {
+        modal.addEventListener("close", function (e) {
+          modal.classList.remove("bottom-0");
+          modal.classList.add("-bottom-full");
+        });
+        modal.addEventListener("open", function (e) {
+          modal.classList.add("bottom-0");
+          modal.classList.remove("-bottom-full");
+        });
+        modal.querySelectorAll(".closer").forEach((closer) =>
+          closer.addEventListener("click", function () {
+            modal.dispatchEvent(new Event("close"));
+          })
+        );
+      }
+
+      for (let tog of modalTogglers) {
+        tog.addEventListener("click", () => {
+          const modalStyleID = tog.dataset.style;
+          const modal = document.querySelector(
+            `[role='modal'][data-style='${modalStyleID}']`
+          );
+          modal.dispatchEvent(new Event("open"));
+        });
+      }
+    </script>
+  </body>
 </html>

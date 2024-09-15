@@ -50,8 +50,8 @@
     color: yellow; 
 }
 .active[data-tab-id="2"]{
-    color: red; 
-    border-bottom: 1px solid red !important;
+    color: #ffc526; 
+    border-bottom: 1px solid #ffc526 !important;
 }
 [data-tab-id="2"][tab-toggler]{
     padding-bottom: 8px;
