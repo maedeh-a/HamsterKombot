@@ -47,7 +47,8 @@
 }
 
 .active[data-tab-id="1"]{
-    color: yellow; 
+    background: #1c1f24; 
+    border-radius: 4px;
 }
 .active[data-tab-id="2"]{
     color: #ffc526; 
