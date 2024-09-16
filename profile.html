@@ -146,7 +146,7 @@
             </div>
           </div>
           <div
-            class="grid grid-cols-2 bg-primary900 rounded-t-3xl p-2 max-h-[400px] overflow-hidden"
+            class="grid grid-cols-2 bg-primary900 rounded-t-3xl p-2 max-h-[430px] overflow-hidden"
           >
             <!-- left skin default -->
             <div class="col-span-1" id="preview">
@@ -204,7 +204,7 @@
               </div>
             </div>
             <!-- right skins -->
-            <div class="col-span-1 max-h-[400px] overflow-scroll p-2 pb-4">
+            <div class="col-span-1 max-h-[430px] overflow-auto p-2 pb-4">
               <div class="grid grid-cols-2 gap-2" id="bots"></div>
             </div>
           </div>
@@ -377,8 +377,11 @@
       <div class="flex-col flex items-center gap-4">
         <div class="flex flex-col items-center gap-1 text-white">
           <span class="text-2xl">Unlock skins</span>
-          <div class="w-[70px] mx-auto">
-            <img src="/img/profile/unlock_skin_2.png" alt="" />
+          <div class="w-[100px] h-[100px] mx-auto relative grid place-items-center my-4">
+            <span class="border-t border-blue w-[100%] h-[100%] absolute rounded-full animate-spin" style="animation-delay: 0;" ></span>
+            <span class="border-t border-purple-500 w-[110%] h-[110%] absolute rounded-full animate-spin scale-[-1_1]" style="animation-delay: 0.3s;"></span>
+            <span class="border-t border-amber-500 w-[120%] h-[120%] absolute rounded-full animate-spin" style="animation-delay: 0.6s;"></span>
+            <img src="/img/profile/unlock_skin_2.png" alt="" class="w-3/5" />
           </div>
           <span class="text-center text-sm">5 skins</span>
         </div>
@@ -421,12 +424,12 @@
           <div class="absolute right-2 top-1 text-gray600" lock>
             <i class="bi bi-lock-fill"></i>
           </div>
-          <span class="absolute -top-1 -right-1" check >
+          <span class="absolute -top-1 -right-1" check>
             <div
-            class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
-          >
-            <i class="bi bi-check2 text-white text-xs"></i>
-          </div>
+              class="bg-gradient-to-b from-[#91E49E] to-[#3F7543] rounded-full z-[60] w-5 h-5 grid place-items-center"
+            >
+              <i class="bi bi-check2 text-white text-xs"></i>
+            </div>
           </span>
         </div>
       </div>
@@ -465,7 +468,7 @@
     </script>
 
     <script>
-      const skins = [
+      let skins = [
         {
           id: 1,
           category: ["all"],
@@ -662,37 +665,54 @@
           preview.querySelector("[box-1]").classList.add("hidden");
           preview.querySelector("[box-2]").classList.remove("hidden");
         }
-       
+        activeSkin = skin;
       };
-      skins.map((skin) => {
-        const clone = template.content.cloneNode(true);
+      const render = () => {
+        container.innerHTML = "";
+        skins.map((skin) => {
+          const clone = template.content.cloneNode(true);
 
-        clone.querySelector("[name]").innerHTML = skin.name;
-        clone.querySelector("img").src = skin.src;
-        if (!skin.locked) {
-          clone.querySelector("[lock]").classList.add("hidden");
-        }
-        if (!skin.chosen) {
-          clone.querySelector("[check]").classList.add("hidden");
-        }
+          clone.querySelector("[name]").innerHTML = skin.name;
+          clone.querySelector("img").src = skin.src;
+          if (!skin.locked) {
+            clone.querySelector("[lock]").classList.add("hidden");
+          }
+          if (!skin.chosen) {
+            clone.querySelector("[check]").classList.add("hidden");
+          }
 
-        clone
-          .querySelector(".col-span-1")
-          .addEventListener("click", function (e) {
-            const prevactive =
-              e.currentTarget.parentElement.querySelector(".col-span-1.border");
-            if (prevactive) prevactive.classList.remove("border");
-            e.currentTarget.classList .add("border");
-            if (skin.chosen) {
-              skin.querySelector("[check]").classList.remove("hidden");
-            } else {
-              skin.querySelector("[check]").classList.add("hidden");
-            }
-            setChosenSkin(skin);
-          });
-        container.append(clone);
-      });
+          clone
+            .querySelector(".col-span-1")
+            .addEventListener("click", function (e) {
+              const prevactive =
+                e.currentTarget.parentElement.querySelector(
+                  ".col-span-1.border"
+                );
+              if (prevactive) prevactive.classList.remove("border");
+              e.currentTarget.classList.add("border");
+              if (skin.chosen) {
+                e.currentTarget
+                  .querySelector("[check]")
+                  .classList.remove("hidden");
+              } else {
+                e.currentTarget
+                  .querySelector("[check]")
+                  .classList.add("hidden");
+              }
+              setChosenSkin(skin);
+            });
+          container.append(clone);
+        });
+      };
+      render()
       setChosenSkin(skins.find((q) => q.chosen));
+
+      document.querySelector("[choose]").addEventListener("click", () => {
+        skins = skins.map((q) => {
+          return { ...q, chosen: q.id === activeSkin.id }
+        });
+        render()
+      });
     </script>
   </body>
 </html>
